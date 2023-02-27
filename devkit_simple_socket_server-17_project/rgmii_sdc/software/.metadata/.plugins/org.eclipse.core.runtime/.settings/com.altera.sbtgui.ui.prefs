@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=/data/acastill/simple_socket_10M50/software/niosII_simple_socket_server
+newSoftwareExampleWizardPage.sopcinfoFile=/data/acastill/simple_socket_10M50/q_sys.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=/data/acastill/simple_socket_10M50/software/niosII_simple_socket_server_bsp

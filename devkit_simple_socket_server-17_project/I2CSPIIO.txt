@@ -1,0 +1,198 @@
+
+//`ifndef I2CSPIIO_H		// include guard for this module if needed
+//`define I2CSPIIO_H
+
+/*
+ August 22, 2022
+ Tom McDermott, N5EG
+ filename:   i2cIO.v
+ 
+ i2c serial input and output buffers
+ For connection to FPGA i/O pins.
+
+
+
+    There are 5 interfaces:
+
+	i2c_rxm_id
+	i2c_rxm_ctrl
+	i2c_clk_id
+	i2c_clk_c0
+	i2c_ckm_c1
+	
+	Some experimentation will be needed to figure out how to fully qualify
+	the signal names.
+
+	The example from the Peripheral User Guide:
+	(We are assuming that arduino_adc are the I/O pin names but the
+	example doesn't say)
+
+assign i2c_serial_scl_in = arduino_adc_scl;
+assign arduino_adc_scl = i2c_serial_scl_oe ? 1'b0 : 1'bz;
+assign i2c_serial_sda_in = arduino_adc_sda;
+assign arduino_adc_sda = i2c_serial_sda_oe ? 1'b0 : 1'bz;
+
+
+NOTES from INTERNET:
+
+...
+
+    bidir_port : inout std_logic;
+
+...
+
+signal bidir_port_output_level : std_logic;
+signal bidir_port_output_enable : std_logic;
+signal bidir_port_input_level : std_logic;
+
+...
+
+    -- output buffer with enable
+    bidir_port <= bidir_port_output_level when bidir_port_output_enable = '1' else 'Z';
+    -- input buffer
+    bidir_port_input_level <= bidir_port;
+
+
+
+Another example of problem: if you implement a bidirectional buffer as shown
+in the following code, the Quartus II software synthesizes an output pin
+(beginning with version 6.0).
+
+process(mdio_out,mdio_oe)
+begin
+    if (mdio_oe = '1') then
+        mac_mdio <= mdio_out;
+    else
+        mac_mdio <= 'Z';
+    end if
+end process;
+
+mdio_oe <= NOT(mdio_oe_n);
+test_out <= mac_mdio and test;
+mii_mdio <= mac_mdio;
+
+If mac_mdio is a signal and mii_mdio is the bidirectional port, the last
+assignment above is directional. As written, it is impossible for data to
+flow from mii_mdio to mac_mdio. Beginning with version 6.0, the Quartus II
+software enforces the directional nature of this VHDL assignment by inserting
+a buffer between mac_mdio and mii_mdio. This buffer appears in the RTL
+Viewer as a directional buffer in series with the tri-state buffer, and
+the intended bidirectional pin (mii_mdio) is synthesized as an output only.
+
+Earlier versions of the Quartus II software do not enforce the directional
+nature of these types of assignments, synthesizing the code above as a
+bidirectional pin.
+
+To conform to the VHDL standard, remove the last signal assignment
+statement in the example above and write the code as follows:
+
+process(mdio_out,mdio_oe)
+begin
+    if (mdio_oe = '1') then
+        mii_mdio <= mdio_out;
+    else
+        mii_mdio <= 'Z';
+    end if;
+end process;
+
+mdio_oe <= NOT(mdio_oe_n);
+test_out <= mii_mdio and test;
+
+
+
+
+For this first attempt, just include this file in the existing top block
+of the project (the rgmii block).
+
+*/
+
+// Two birdirectional open-drain buffers for scl and sda
+
+module OpenDrainBuf2(
+	input wire scl_enable,
+	inout wire scl_dat,
+	input wire sda_enable,
+	inout wire sda_dat);
+
+assign i2cscl = scl_dat;
+assign scl_dat = scl_enable ? 1'b0 : 1'bz;
+
+assign i2csda = sda_dat;
+assign sda_dat = sda_enable ? 1'b0 : 1'bz;
+
+
+endmodule
+
+module I2CBuffers(
+	inout wire rxmid_sclk,
+	input wire rxmid_sclkoe,
+	inout wire rxmid_sdata,
+	input wire rxmid_sdatoe,
+
+	inout wire rxmctrl_sclk,
+	input wire rxmctrl_sclkoe,
+	inout wire rxmctrl_sdata,
+	input wire rxmctrl_sdatoe,
+
+	inout wire ckmid_sclk,
+	input wire ckmid_sclkoe,
+	inout wire ckmid_sdata,
+	input wire ckmid_sdatoe,
+
+	inout wire ckmc0_sclk,
+	input wire ckmc0_sclkoe,
+	inout wire ckmc0_sdata,
+	input wire ckmc0_sdatoe,
+
+	inout wire ckmc1_sclk,
+	input wire ckmc1_sclkoe,
+	inout wire ckmc1_sdata,
+	input wire ckmc1_sdatoe,
+	);
+
+
+	
+endmodule
+
+
+
+// Rx Module Ident I2C
+assign q_sys.i2c_rxm_id_i2c_serial_scl_in = rxmid_scl;
+assign rxm_scl = q_sys.i2c_rxm_id_serial_scl_oe ? 1'b0 : 1'bz;
+assign q_sys.i2c_rxm_id_i2c_serial_sda_in = rxmid_sda;
+assign rxmid_sda = q_sys.i2c_rxm_id_serial_sda_oe ? 1'b0 : 1'bz;
+
+
+/* Temporarily try just the first one......
+
+
+// Rx Module Control I2C
+assign i2c_rxm_ctrl_i2c_serial_scl_in = rxmctrl_scl;
+assign rxm_scl = i2c_rxm_ctrl_serial_scl_oe ? 1'b0 : 1'bz;
+assign i2c_rxm_ctrl_i2c_serial_sda_in = rxmctrl_sda;
+assign rxmctrl_sda = i2c_rxm_ctrl_serial_sda_oe ? 1'b0 : 1'bz;
+
+// Clock Ident I2C
+assign i2c_ckm_id_i2c_serial_scl_in = ckmid_scl;
+assign ckm_scl = i2c_ckm_id_serial_scl_oe ? 1'b0 : 1'bz;
+assign i2c_ckm_id_i2c_serial_sda_in = ckmid_sda;
+assign ckmid_sda = i2c_ckm_id_serial_sda_oe ? 1'b0 : 1'bz;
+
+// Clock Control C0
+assign i2c_ckm_c0_i2c_serial_scl_in = ckmc0_scl;
+assign ckmc0_scl = i2c_ckm_c0_serial_scl_oe ? 1'b0 : 1'bz;
+assign i2c_ckm_c0_i2c_serial_sda_in = ckmc0_sda;
+assign ckmc0_sda = i2c_ckm_c0_serial_sda_oe ? 1'b0 : 1'bz;
+
+// clock control C1
+assign i2c_ckm_c1_i2c_serial_scl_in = ckmc1_scl;
+assign ckmc1_scl = i2c_ckm_c1_serial_scl_oe ? 1'b0 : 1'bz;
+assign i2c_ckm_c1_i2c_serial_sda_in = ckmc1_sda;
+assign ckmc1_sda = i2c_ckm_c1_serial_sda_oe ? 1'b0 : 1'bz;
+
+
+*/
+
+
+//`endif	//I2CSPIIO_H
+

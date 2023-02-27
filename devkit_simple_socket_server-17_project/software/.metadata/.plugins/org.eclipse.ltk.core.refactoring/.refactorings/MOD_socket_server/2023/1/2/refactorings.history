@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MOD_socket_server/initPeripherals.c&apos; to &apos;InitPeripherals.c&apos;" description="Rename resource &apos;initPeripherals.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="initPeripherals.c" name="InitPeripherals.c" stamp="1673393581409" updateReferences="true"/>
+</session>

@@ -1,0 +1,20 @@
+
+Reading the serial number from the Microchip ATECC608.
+
+Command Packet Sz:  8  at zone 0 address 0x00
+Command packet + CRC ['0x3', '0x7', '0x2', '0x0', '0x0', '0x0', '0x1e', '0x2d']
+Now read 4 bytes serial_num[0-3]
+
+Command Packet Sz:  8  at zone 0 address 0x02
+Command packet + CRC ['0x3', '0x7', '0x2', '0x0', '0x2', '0x0', '0x18', '0xad']
+Now read 4 bytes serial_num[4-7]
+
+Command Packet Sz:  8  at zone 0 address 0x03 
+Command packet + CRC ['0x3', '0x7', '0x2', '0x0', '0x3', '0x0', '0x11', '0x2d']
+Now read 4 bytes, only first byte useful as serial_num[8]
+
+To read, send the command:
+Command packet + CRC ['0x3', '0x7', '0x2', '0x0', '0x0', '0x0', '0x1e', '0x2d']
+THIS SEEMS WRONG AS ITS THE SAME AS STEP 1.
+
+

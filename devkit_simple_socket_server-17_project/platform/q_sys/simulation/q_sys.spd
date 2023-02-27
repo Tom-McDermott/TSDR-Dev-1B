@@ -1,0 +1,3113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="submodules/q_sys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv"
+   type="SYSTEM_VERILOG"
+   library="error_adapter_0" />
+ <file
+   path="submodules/alt_mem_ddrx_mm_st_converter.v"
+   type="VERILOG"
+   library="a0" />
+ <file
+   path="submodules/alt_mem_ddrx_addr_cmd.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_addr_cmd_wrap.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ddr2_odt_gen.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ddr3_odt_gen.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_lpddr2_addr_cmd.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_odt_gen.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_rdwr_data_tmg.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_arbiter.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_burst_gen.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_cmd_gen.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_csr.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_buffer.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_buffer_manager.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_burst_tracking.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_dataid_manager.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_fifo.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_list.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_rdata_path.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_wdata_path.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ecc_decoder.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ecc_decoder_32_syn.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ecc_decoder_64_syn.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ecc_encoder.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ecc_encoder_32_syn.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ecc_encoder_64_syn.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_ecc_encoder_decoder_wrapper.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_axi_st_converter.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_input_if.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_rank_timer.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_sideband.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file path="submodules/alt_mem_ddrx_tbp.v" type="VERILOG" library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_timing_param.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_controller.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_ddrx_controller_st_top.v"
+   type="VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/alt_mem_if_nextgen_ddr3_controller_core.sv"
+   type="SYSTEM_VERILOG"
+   library="ng0">
+  <include path="submodules/alt_mem_ddrx_define.iv" />
+ </file>
+ <file
+   path="submodules/altera_epcq_controller_arb.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_epcq_controller_core" />
+ <file
+   path="submodules/altera_epcq_controller.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_epcq_controller_core" />
+ <file
+   path="submodules/q_sys_ext_flash_altera_asmi_parallel_core_altera_asmi_parallel_core.v"
+   type="VERILOG"
+   library="altera_asmi_parallel_core" />
+ <file
+   path="submodules/soft_asmiblock.sv"
+   type="SYSTEM_VERILOG"
+   library="soft_asmiblock_core" />
+ <file
+   path="submodules/q_sys_avalon_st_adapter_timing_adapter_0.sv"
+   type="SYSTEM_VERILOG"
+   library="timing_adapter_0" />
+ <file
+   path="submodules/q_sys_avalon_st_adapter_timing_adapter_0_fifo.sv"
+   type="SYSTEM_VERILOG"
+   library="timing_adapter_0" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_avalon_st_adapter.v"
+   type="VERILOG"
+   library="avalon_st_adapter" />
+ <file
+   path="submodules/altera_avalon_st_handshake_clock_crosser.v"
+   type="SYSTEM_VERILOG"
+   library="crosser" />
+ <file
+   path="submodules/altera_avalon_st_clock_crosser.v"
+   type="SYSTEM_VERILOG"
+   library="crosser" />
+ <file
+   path="submodules/altera_avalon_st_pipeline_base.v"
+   type="SYSTEM_VERILOG"
+   library="crosser" />
+ <file
+   path="submodules/altera_std_synchronizer_nocut.v"
+   type="SYSTEM_VERILOG"
+   library="crosser" />
+ <file
+   path="submodules/altera_avalon_st_handshake_clock_crosser.sdc"
+   type="SDC"
+   library="crosser" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_rsp_mux_002.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_mux_002" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_mux_002" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_rsp_mux_001.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_mux_001" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_mux_001" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_rsp_mux.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_mux" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_mux" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_rsp_demux_010.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_demux_010" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_rsp_demux_003.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_demux_003" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_rsp_demux_002.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_demux_002" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_rsp_demux.sv"
+   type="SYSTEM_VERILOG"
+   library="rsp_demux" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_cmd_mux_010.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux_010" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux_010" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_cmd_mux_002.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux_002" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux_002" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_cmd_mux_001.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux_001" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux_001" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_cmd_mux.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_mux" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_cmd_demux_002.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_demux_002" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_cmd_demux_001.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_demux_001" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_cmd_demux.sv"
+   type="SYSTEM_VERILOG"
+   library="cmd_demux" />
+ <file
+   path="submodules/altera_merlin_burst_adapter.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_merlin_burst_adapter_uncmpr.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_merlin_burst_adapter_13_1.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_merlin_burst_adapter_new.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_incr_burst_converter.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_wrap_burst_converter.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_default_burst_converter.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_merlin_address_alignment.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_avalon_st_pipeline_stage.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_avalon_st_pipeline_base.v"
+   type="SYSTEM_VERILOG"
+   library="ext_flash_avl_mem_burst_adapter" />
+ <file
+   path="submodules/altera_merlin_traffic_limiter.sv"
+   type="SYSTEM_VERILOG"
+   library="cpu_data_master_limiter" />
+ <file
+   path="submodules/altera_merlin_reorder_memory.sv"
+   type="SYSTEM_VERILOG"
+   library="cpu_data_master_limiter" />
+ <file
+   path="submodules/altera_avalon_sc_fifo.v"
+   type="SYSTEM_VERILOG"
+   library="cpu_data_master_limiter" />
+ <file
+   path="submodules/altera_avalon_st_pipeline_base.v"
+   type="SYSTEM_VERILOG"
+   library="cpu_data_master_limiter" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router_018.sv"
+   type="SYSTEM_VERILOG"
+   library="router_018" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router_010.sv"
+   type="SYSTEM_VERILOG"
+   library="router_010" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router_009.sv"
+   type="SYSTEM_VERILOG"
+   library="router_009" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router_008.sv"
+   type="SYSTEM_VERILOG"
+   library="router_008" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router_004.sv"
+   type="SYSTEM_VERILOG"
+   library="router_004" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router_002.sv"
+   type="SYSTEM_VERILOG"
+   library="router_002" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router_001.sv"
+   type="SYSTEM_VERILOG"
+   library="router_001" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0_router.sv"
+   type="SYSTEM_VERILOG"
+   library="router" />
+ <file
+   path="submodules/altera_avalon_sc_fifo.v"
+   type="VERILOG"
+   library="dual_boot_0_avalon_agent_rsp_fifo" />
+ <file
+   path="submodules/altera_merlin_slave_agent.sv"
+   type="SYSTEM_VERILOG"
+   library="dual_boot_0_avalon_agent" />
+ <file
+   path="submodules/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG"
+   library="dual_boot_0_avalon_agent" />
+ <file
+   path="submodules/altera_merlin_master_agent.sv"
+   type="SYSTEM_VERILOG"
+   library="cpu_data_master_agent" />
+ <file
+   path="submodules/altera_merlin_slave_translator.sv"
+   type="SYSTEM_VERILOG"
+   library="dual_boot_0_avalon_translator" />
+ <file
+   path="submodules/altera_merlin_master_translator.sv"
+   type="SYSTEM_VERILOG"
+   library="cpu_data_master_translator" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_c0.v"
+   type="VERILOG"
+   library="c0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_software/sequencer_m10.c"
+   type="OTHER"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_software/sequencer_m10.h"
+   type="OTHER"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_software/sequencer_defines.h"
+   type="OTHER"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_make_qsys_seq.tcl"
+   type="OTHER"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/rw_manager_write_decoder.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_rsp_mux.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_bitcheck.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/sequencer_phy_mgr.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/altera_merlin_burst_uncompressor.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/rw_manager_inst_ROM_reg.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_cmd_demux.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/altera_merlin_master_translator.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_dm_decoder.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_avalon_st_adapter.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/rw_manager_di_buffer_wrap.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_rsp_demux.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/sequencer_m10.sv" type="SYSTEM_VERILOG" library="s0" />
+ <file
+   path="submodules/altera_merlin_slave_translator.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_datamux.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/rw_manager_generic.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_di_buffer.v" type="VERILOG" library="s0" />
+ <file path="submodules/rw_manager_ram_csr.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/rw_manager_data_broadcast.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/altera_merlin_slave_agent.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_ddr3.v" type="VERILOG" library="s0" />
+ <file path="submodules/altera_avalon_sc_fifo.v" type="VERILOG" library="s0" />
+ <file path="submodules/rw_manager_ac_ROM_reg.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_cmd_mux.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_jumplogic.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/rw_manager_data_decoder.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/rw_manager_read_datapath.v"
+   type="VERILOG"
+   library="s0" />
+ <file
+   path="submodules/sequencer_pll_mgr.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_router.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/rw_manager_core.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_lfsr12.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/altera_mem_if_sequencer_rst.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_ram.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/altera_merlin_master_agent.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_lfsr72.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_mm_interconnect_0_router_001.sv"
+   type="SYSTEM_VERILOG"
+   library="s0" />
+ <file
+   path="submodules/rw_manager_pattern_fifo.v"
+   type="VERILOG"
+   library="s0" />
+ <file path="submodules/rw_manager_lfsr36.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_AC_ROM.hex"
+   type="HEX"
+   library="s0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_s0_inst_ROM.hex"
+   type="HEX"
+   library="s0" />
+ <file path="submodules/rw_manager_m10_ac_ROM.v" type="VERILOG" library="s0" />
+ <file
+   path="submodules/rw_manager_m10_inst_ROM.v"
+   type="VERILOG"
+   library="s0" />
+ <file path="submodules/afi_mux_ddr3_ddrx.v" type="VERILOG" library="m0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_clock_pair_generator.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_read_valid_selector.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_addr_cmd_datapath.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_reset_m10.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_memphy_m10.sv"
+   type="SYSTEM_VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_dqdqs_pads_m10.sv"
+   type="SYSTEM_VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_reset_sync.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_fr_cycle_shifter.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_read_datapath_m10.sv"
+   type="SYSTEM_VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_write_datapath_m10.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_simple_ddio_out_m10.sv"
+   type="SYSTEM_VERILOG"
+   library="p0" />
+ <file
+   path="submodules/max10emif_dcfifo.sv"
+   type="SYSTEM_VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_iss_probe.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_addr_cmd_pads_m10.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0_flop_mem.v"
+   type="VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_p0.sv"
+   type="SYSTEM_VERILOG"
+   library="p0" />
+ <file
+   path="submodules/altera_gpio_lite.sv"
+   type="SYSTEM_VERILOG"
+   library="p0" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0_pll0.sv"
+   type="SYSTEM_VERILOG"
+   library="pll0" />
+ <file
+   path="submodules/altera_epcq_controller_core.v"
+   type="VERILOG"
+   library="altera_epcq_controller_core" />
+ <file
+   path="submodules/altera_asmi_parallel_core.v"
+   type="VERILOG"
+   library="altera_asmi_parallel_core" />
+ <file
+   path="submodules/soft_asmiblock_core.v"
+   type="VERILOG"
+   library="soft_asmiblock_core" />
+ <file
+   path="submodules/altera_gpio_lite.sv"
+   type="SYSTEM_VERILOG"
+   library="rgmii_in4_0" />
+ <file
+   path="submodules/mentor/altera_eth_tse_mac.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_eth_tse_mac.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_eth_tse_mac.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_eth_tse_mac.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_clk_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_clk_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_clk_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_clk_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_crc328checker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_crc328checker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_crc328checker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_crc328checker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_crc328generator.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_crc328generator.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_crc328generator.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_crc328generator.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_crc32ctl8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_crc32ctl8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_crc32ctl8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_crc32ctl8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_crc32galois8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_crc32galois8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_crc32galois8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_crc32galois8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_gmii_io.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_gmii_io.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_gmii_io.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_gmii_io.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_lb_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_lb_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_lb_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_lb_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_lb_wrt_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_lb_wrt_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_lb_wrt_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_lb_wrt_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_hashing.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_hashing.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_hashing.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_hashing.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_host_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_host_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_host_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_host_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_host_control_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_host_control_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_host_control_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_host_control_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_register_map_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_register_map_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_register_map_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_register_map_small.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_shared_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_shared_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_shared_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_shared_mac_control.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_shared_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_shared_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_shared_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_shared_register_map.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_counter_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_lfsr_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_lfsr_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_lfsr_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_lfsr_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_loopback_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_loopback_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_loopback_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_loopback_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_altshifttaps.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_altshifttaps.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_altshifttaps.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_altshifttaps.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_fifoless_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_fifoless_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_fifoless_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_fifoless_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mac_rx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_fifoless_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_fifoless_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_fifoless_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_fifoless_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mac_tx.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_magic_detection.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_magic_detection.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_magic_detection.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_magic_detection.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mdio_clk_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mdio_clk_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mdio_clk_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mdio_clk_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mdio_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mdio_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mdio_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mdio_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_mdio.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mii_rx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mii_rx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mii_rx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mii_rx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_mii_tx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_mii_tx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_mii_tx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_mii_tx_if.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_pipeline_base.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_pipeline_base.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_pipeline_base.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_pipeline_base.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_pipeline_stage.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_pipeline_stage.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_pipeline_stage.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_pipeline_stage.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_dpram_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_dpram_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_dpram_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_dpram_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_dpram_8x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_dpram_8x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_dpram_8x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_dpram_8x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_dpram_ecc_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_dpram_ecc_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_dpram_ecc_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_dpram_ecc_16x32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_fifoless_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_fifoless_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_fifoless_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_fifoless_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_retransmit_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rgmii_in1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rgmii_in1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rgmii_in1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rgmii_in1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rgmii_in4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rgmii_in4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rgmii_in4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rgmii_in4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_nf_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_nf_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_nf_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_nf_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rgmii_module.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rgmii_out1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rgmii_out1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rgmii_out1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rgmii_out1.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rgmii_out4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rgmii_out4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rgmii_out4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rgmii_out4.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_rx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_rx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_rx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_rx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_timing_adapter32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_timing_adapter32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_timing_adapter32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_timing_adapter32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_timing_adapter8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_timing_adapter8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_timing_adapter8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_timing_adapter8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_timing_adapter_fifo32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_timing_adapter_fifo32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_timing_adapter_fifo32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_timing_adapter_fifo32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_timing_adapter_fifo8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_timing_adapter_fifo8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_timing_adapter_fifo8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_timing_adapter_fifo8.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_fifoless_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_fifoless_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_fifoless_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_fifoless_1geth.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_w_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_w_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_w_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_w_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_w_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_w_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_w_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_w_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_wo_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_wo_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_wo_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_wo_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_wo_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_wo_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_wo_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_wo_fifo_10_100_1000.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_top_gen_host.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_top_gen_host.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_top_gen_host.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_top_gen_host.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_min_ff.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_ff_cntrl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_ff_cntrl_32.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_ff_cntrl_32_shift16.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_ff_length.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_ff_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_ff_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_ff_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_ff_read_cntl.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_tx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_tx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_tx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_tx_stat_extract.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_eth_tse_std_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_eth_tse_std_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_eth_tse_std_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_eth_tse_std_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_eth_tse_std_synchronizer_bundle.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_eth_tse_std_synchronizer_bundle.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_eth_tse_std_synchronizer_bundle.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_eth_tse_std_synchronizer_bundle.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_false_path_marker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_false_path_marker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_false_path_marker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_false_path_marker.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_reset_synchronizer.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_clock_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_clock_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_clock_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_clock_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_a_fifo_13.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_a_fifo_13.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_a_fifo_13.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_a_fifo_13.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_a_fifo_24.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_a_fifo_24.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_a_fifo_24.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_a_fifo_24.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_a_fifo_34.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_a_fifo_34.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_a_fifo_34.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_a_fifo_34.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_a_fifo_opt_1246.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_a_fifo_opt_1246.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_a_fifo_opt_1246.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_a_fifo_opt_1246.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_a_fifo_opt_14_44.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_a_fifo_opt_14_44.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_a_fifo_opt_14_44.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_a_fifo_opt_14_44.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_a_fifo_opt_36_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_a_fifo_opt_36_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_a_fifo_opt_36_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_a_fifo_opt_36_10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_gray_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_gray_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_gray_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_gray_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_sdpm_altsyncram.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_sdpm_altsyncram.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_sdpm_altsyncram.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_sdpm_altsyncram.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_altsyncram_dpm_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_altsyncram_dpm_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_altsyncram_dpm_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_altsyncram_dpm_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_bin_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_bin_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_bin_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_bin_cnt.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ph_calculator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ph_calculator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ph_calculator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ph_calculator.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_sdpm_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_sdpm_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_sdpm_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_sdpm_gen.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_dec_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_dec_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_dec_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_dec_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x10.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x10_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x10_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x10_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x10_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_dec_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_dec_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_dec_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_dec_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x14.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x14_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x14_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x14_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x14_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_dec_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_dec_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_dec_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_dec_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x2.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x2_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x2_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x2_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x2_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_dec_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_dec_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_dec_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_dec_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x23.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x23_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x23_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x23_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x23_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_dec_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_dec_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_dec_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_dec_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x36.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x36_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x36_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x36_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x36_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_dec_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_dec_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_dec_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_dec_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x40.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x40_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x40_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x40_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x40_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_dec_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_dec_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_dec_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_dec_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x30.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_enc_x30_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_enc_x30_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_enc_x30_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_enc_x30_wrapper.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file
+   path="submodules/mentor/altera_tse_ecc_status_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_tse_ecc_status_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="riviera" />
+ <file
+   path="submodules/synopsys/altera_tse_ecc_status_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="vcs" />
+ <file
+   path="submodules/cadence/altera_tse_ecc_status_crosser.v"
+   type="VERILOG_ENCRYPT"
+   library="i_tse_mac"
+   simulator="ncsim" />
+ <file path="submodules/q_sys_cpu_cpu_rf_ram_a.mif" type="MIF" library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_test_bench.v"
+   type="VERILOG"
+   library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_bht_ram.hex" type="HEX" library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_dc_tag_ram.mif"
+   type="MIF"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_ociram_default_contents.hex"
+   type="HEX"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_dc_tag_ram.dat"
+   type="DAT"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_debug_slave_sysclk.v"
+   type="VERILOG"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_debug_slave_wrapper.v"
+   type="VERILOG"
+   library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu.vo" type="VERILOG" library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_rf_ram_b.hex" type="HEX" library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_ic_tag_ram.dat"
+   type="DAT"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_ociram_default_contents.mif"
+   type="MIF"
+   library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_rf_ram_a.dat" type="DAT" library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_ic_tag_ram.mif"
+   type="MIF"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_dc_tag_ram.hex"
+   type="HEX"
+   library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_bht_ram.mif" type="MIF" library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_nios2_waves.do"
+   type="OTHER"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_ic_tag_ram.hex"
+   type="HEX"
+   library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_rf_ram_b.dat" type="DAT" library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_rf_ram_a.hex" type="HEX" library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_ociram_default_contents.dat"
+   type="DAT"
+   library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu.sdc" type="SDC" library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_rf_ram_b.mif" type="MIF" library="cpu" />
+ <file path="submodules/q_sys_cpu_cpu_bht_ram.dat" type="DAT" library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_mult_cell.v"
+   type="VERILOG"
+   library="cpu" />
+ <file
+   path="submodules/q_sys_cpu_cpu_debug_slave_tck.v"
+   type="VERILOG"
+   library="cpu" />
+ <file
+   path="submodules/altera_reset_controller.v"
+   type="VERILOG"
+   library="rst_controller" />
+ <file
+   path="submodules/altera_reset_synchronizer.v"
+   type="VERILOG"
+   library="rst_controller" />
+ <file
+   path="submodules/altera_reset_controller.sdc"
+   type="SDC"
+   library="rst_controller" />
+ <file
+   path="submodules/q_sys_avalon_st_adapter.v"
+   type="VERILOG"
+   library="avalon_st_adapter" />
+ <file
+   path="submodules/altera_irq_clock_crosser.sv"
+   type="SYSTEM_VERILOG"
+   library="irq_synchronizer" />
+ <file
+   path="submodules/q_sys_irq_mapper.sv"
+   type="SYSTEM_VERILOG"
+   library="irq_mapper" />
+ <file
+   path="submodules/q_sys_mm_interconnect_0.v"
+   type="VERILOG"
+   library="mm_interconnect_0" />
+ <file path="submodules/q_sys_sysid.v" type="VERILOG" library="sysid" />
+ <file
+   path="submodules/q_sys_sys_clk_timer.v"
+   type="VERILOG"
+   library="sys_clk_timer" />
+ <file path="submodules/q_sys_sgdma_tx.v" type="VERILOG" library="sgdma_tx" />
+ <file path="submodules/q_sys_sgdma_rx.v" type="VERILOG" library="sgdma_rx" />
+ <file
+   path="submodules/q_sys_onchip_ram.v"
+   type="VERILOG"
+   library="onchip_ram" />
+ <file
+   path="submodules/q_sys_mem_if_ddr3_emif_0.v"
+   type="VERILOG"
+   library="mem_if_ddr3_emif_0" />
+ <file path="submodules/q_sys_led_pio.v" type="VERILOG" library="led_pio" />
+ <file
+   path="submodules/q_sys_jtag_uart.v"
+   type="VERILOG"
+   library="jtag_uart" />
+ <file
+   path="submodules/generic_qspi_controller.sv"
+   type="SYSTEM_VERILOG"
+   library="ext_flash" />
+ <file path="submodules/q_sys_eth_tse.v" type="VERILOG" library="eth_tse" />
+ <file path="submodules/q_sys_enet_pll.vo" type="VERILOG" library="enet_pll" />
+ <file
+   path="submodules/mentor/altera_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_dual_boot_avmm.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/alt_dual_boot_avmm.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/alt_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="riviera" />
+ <file
+   path="submodules/cadence/altera_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="ncsim" />
+ <file
+   path="submodules/cadence/alt_dual_boot_avmm.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="ncsim" />
+ <file
+   path="submodules/cadence/alt_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="ncsim" />
+ <file
+   path="submodules/synopsys/altera_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="vcs" />
+ <file
+   path="submodules/synopsys/alt_dual_boot_avmm.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="vcs" />
+ <file
+   path="submodules/synopsys/alt_dual_boot.v"
+   type="VERILOG_ENCRYPT"
+   library="dual_boot_0"
+   simulator="vcs" />
+ <file
+   path="submodules/q_sys_descriptor_memory.v"
+   type="VERILOG"
+   library="descriptor_memory" />
+ <file path="submodules/q_sys_cpu.v" type="VERILOG" library="cpu" />
+ <file
+   path="submodules/q_sys_altpll_shift.vo"
+   type="VERILOG"
+   library="altpll_shift" />
+ <file path="q_sys.v" type="VERILOG" />
+ <topLevel name="q_sys" />
+ <deviceFamily name="max10" />
+ <modelMap
+   controllerPath="q_sys.descriptor_memory"
+   modelPath="q_sys.descriptor_memory" />
+ <modelMap
+   controllerPath="q_sys.mem_if_ddr3_emif_0"
+   modelPath="q_sys.mem_if_ddr3_emif_0" />
+ <modelMap controllerPath="q_sys.onchip_ram" modelPath="q_sys.onchip_ram" />
+</simPackage>

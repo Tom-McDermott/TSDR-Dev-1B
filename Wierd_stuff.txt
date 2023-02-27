@@ -1,0 +1,43 @@
+
+October 14, 2022   Eth-TSDR-06
+
+1. Error in building C code.
+
+If there are includes that can't be resolved, this can be caused by
+indexes that are out of date.  Changing Qsys and regenerating the BSP
+(and hence system.h) causes the problem where the source code is correct
+but the includes in system.h can't be resolved.
+
+To fix this, select the project and right-click --> Index --> Rebuild.
+Also may need to --> ReResolve Unresolved Includes.
+The do a Project --> Clean
+
+----------------------------------------------
+
+2. The Board Support Package (settings.bsp) has hard-coded paths. Lines 7
+and 8 must be edited to point to the directory where the bsp file is located.
+
+<BspGeneratedLocation>/home/tom/TSDR-Dev/devkit_simple_socket_server-17_project/software/MOD_socket_server_bsp</BspGeneratedLocation>
+<BspSettingsFile>/home/tom/TSDR-Dev/devkit_simple_socket_server-17_project/software/MOD_socket_server_bsp/settings.bsp</BspSettingsFile>
+
+Otherwise it will attempt to overwrite the wrong directory when the
+BSP is regenerated (anytime the Qsys peripherals change).
+
+3. Because the BSP is edited, the software build will now fail due to the timestamp
+on the BSP file being newer than the software build. The makefile error prints
+on-console text instructions that DO NOT WORK.  Instead you must:
+
+  A. Open the BSP settings editor.
+  B. Use that BSP Editor File --> Open.
+  C. Navigate extensively through the file system to the <your-project-location>/
+  software/MOD_socket_server_bsp/settings.bsp file, then open.
+  D. Generate the new Board Support Package.
+  E. This over-writes any changes/patches made to the drivers.
+  F One change is needed in the
+  <your-project-location>/MOD_socket_server_bsp/drivers/src/altera-avalon-tse.c
+  file (this is the ethernet driver).
+  F. Change the value in line 1610 from sleep(1000)   to   sleep(2000)
+  
+----------------------------------------------
+
+

@@ -1,0 +1,18 @@
+# system info clkctrl on 2021.09.19.07:38:23
+system_info:
+name,value
+DEVICE,10M50DAF484C6GES
+DEVICE_FAMILY,MAX 10
+GENERATION_ID,1632062303
+#
+#
+# Files generated for clkctrl on 2021.09.19.07:38:23
+files:
+filepath,kind,attributes,module,is_top
+simulation/clkctrl.v,VERILOG,,clkctrl,true
+simulation/submodules/clkctrl_altclkctrl_0.v,VERILOG,,clkctrl_altclkctrl_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+clkctrl.altclkctrl_0,clkctrl_altclkctrl_0

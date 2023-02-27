@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="enet_gtx_clk_ddio_sim/altera_gpio_lite/altera_gpio_lite.sv"
+   type="SYSTEM_VERILOG"
+   library="enet_gtx_clk_ddio" />
+ <file path="enet_gtx_clk_ddio_sim/enet_gtx_clk_ddio.v" type="VERILOG" />
+ <topLevel name="enet_gtx_clk_ddio" />
+ <deviceFamily name="max10" />
+</simPackage>

@@ -1,0 +1,2 @@
+devkit_simple_socket_server.qp_info
+devkit_simple_socket_server.qar

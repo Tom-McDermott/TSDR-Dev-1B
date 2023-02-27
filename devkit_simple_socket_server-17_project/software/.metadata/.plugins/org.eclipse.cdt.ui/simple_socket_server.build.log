@@ -1,0 +1,63 @@
+15:18:29 **** Incremental Build of configuration Nios II for project simple_socket_server ****
+make all 
+Info: Building ../simple_socket_server_bsp/
+make --no-print-directory -C ../simple_socket_server_bsp/
+[BSP build complete]
+Info: Compiling tse_my_system.c to obj/default/tse_my_system.o
+nios2-elf-gcc -xc -MP -MMD -c -I../simple_socket_server_bsp//drivers/inc -I../simple_socket_server_bsp//drivers/inc/iniche -I../simple_socket_server_bsp//iniche/inc -I../simple_socket_server_bsp//iniche/src/h -I../simple_socket_server_bsp//iniche/src/h/nios2 -I../simple_socket_server_bsp//iniche/src/nios2 -I../simple_socket_server_bsp//UCOSII/inc -I../simple_socket_server_bsp//HAL/inc -I../simple_socket_server_bsp/ -I../simple_socket_server_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALTERA_TRIPLE_SPEED_MAC -DALT_INICHE -D__ucosii__ -DALTERA_AUTONEG_TIMEOUT_THRESHOLD=2500 -DALTERA_CHECKLINK_TIMEOUT_THRESHOLD=10000 -DALTERA_NOMDIO_TIMEOUT_THRESHOLD=1000000    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/tse_my_system.o tse_my_system.c
+In file included from tse_my_system.c:2:
+../simple_socket_server_bsp//iniche/src/h/nios2/ipport.h:117: warning: "LITTLE_ENDIAN" redefined
+  117 | #define LITTLE_ENDIAN 1234
+      | 
+In file included from /home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/sys/types.h:49,
+                 from /home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/stdio.h:61,
+                 from ../simple_socket_server_bsp//iniche/src/h/nios2/ipport.h:51,
+                 from tse_my_system.c:2:
+/home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/machine/endian.h:17: note: this is the location of the previous definition
+   17 | #define LITTLE_ENDIAN _LITTLE_ENDIAN
+      | 
+In file included from tse_my_system.c:2:
+../simple_socket_server_bsp//iniche/src/h/nios2/ipport.h:118: warning: "BIG_ENDIAN" redefined
+  118 | #define BIG_ENDIAN    4321
+      | 
+In file included from /home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/sys/types.h:49,
+                 from /home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/stdio.h:61,
+                 from ../simple_socket_server_bsp//iniche/src/h/nios2/ipport.h:51,
+                 from tse_my_system.c:2:
+/home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/machine/endian.h:18: note: this is the location of the previous definition
+   18 | #define BIG_ENDIAN _BIG_ENDIAN
+      | 
+In file included from tse_my_system.c:2:
+../simple_socket_server_bsp//iniche/src/h/nios2/ipport.h:119: warning: "BYTE_ORDER" redefined
+  119 | #define BYTE_ORDER    LITTLE_ENDIAN
+      | 
+In file included from /home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/sys/types.h:49,
+                 from /home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/stdio.h:61,
+                 from ../simple_socket_server_bsp//iniche/src/h/nios2/ipport.h:51,
+                 from tse_my_system.c:2:
+/home/tom/intelFPGA_lite/20.1/nios2eds/bin/gnu/H-x86_64-pc-linux-gnu/nios2-elf/include/machine/endian.h:20: note: this is the location of the previous definition
+   20 | #define BYTE_ORDER _BYTE_ORDER
+      | 
+In file included from tse_my_system.c:7:
+tse_my_system.c:27:55: error: 'TSE_0_DMA_TX_CSR_NAME' undeclared here (not in a function); did you mean 'MSGDMA_TX_CSR_NAME'?
+   27 |         TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(ETH_TSE, 0, TSE_0_DMA_TX, TSE_0_DMA_RX, TSE_PHY_AUTO_ADDRESS, ADDITIONAL_PHY_CFG, DESCRIPTOR_MEMORY)
+      |                                                       ^~~~~~~~~~~~
+../simple_socket_server_bsp//drivers/inc/altera_avalon_tse_system_info.h:55:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
+   55 |     msgdma_tx_name##_CSR_NAME,            \
+      |     ^~~~~~~~~~~~~~
+tse_my_system.c:27:69: error: 'TSE_0_DMA_RX_CSR_NAME' undeclared here (not in a function); did you mean 'MSGDMA_RX_CSR_NAME'?
+   27 |         TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(ETH_TSE, 0, TSE_0_DMA_TX, TSE_0_DMA_RX, TSE_PHY_AUTO_ADDRESS, ADDITIONAL_PHY_CFG, DESCRIPTOR_MEMORY)
+      |                                                                     ^~~~~~~~~~~~
+../simple_socket_server_bsp//drivers/inc/altera_avalon_tse_system_info.h:56:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
+   56 |     msgdma_rx_name##_CSR_NAME,            \
+      |     ^~~~~~~~~~~~~~
+tse_my_system.c:27:69: error: 'TSE_0_DMA_RX_CSR_IRQ' undeclared here (not in a function); did you mean 'MSGDMA_RX_CSR_IRQ'?
+   27 |         TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO(ETH_TSE, 0, TSE_0_DMA_TX, TSE_0_DMA_RX, TSE_PHY_AUTO_ADDRESS, ADDITIONAL_PHY_CFG, DESCRIPTOR_MEMORY)
+      |                                                                     ^~~~~~~~~~~~
+../simple_socket_server_bsp//drivers/inc/altera_avalon_tse_system_info.h:57:5: note: in definition of macro 'TSE_SYSTEM_EXT_MEM_NO_SHARED_FIFO'
+   57 |     msgdma_rx_name##_CSR_IRQ,             \
+      |     ^~~~~~~~~~~~~~
+make: *** [Makefile:726: obj/default/tse_my_system.o] Error 1
+
+15:18:29 Build Finished (took 568ms)
+

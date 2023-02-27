@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MOD_socket_server/ClockModInit&apos; to &apos;ClockModInit.h&apos;" description="Rename resource &apos;ClockModInit&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ClockModInit" name="ClockModInit.h" stamp="1668627014726" updateReferences="true"/>
+</session>

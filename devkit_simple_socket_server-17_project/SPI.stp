@@ -1,0 +1,376 @@
+<session jtag_chain="USB-BlasterII [1-1.1]" jtag_device="@1: 10M50DA(.|ES)/10M50DC (0x031050DD)" sof_file="">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="SPI_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance enabled="true" entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="SPI_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set is_expanded="false" name="signal_set: 2022/12/14 08:03:51  #0">
+      <clock name="subclock:SC|clock4" polarity="posedge" tap_mode="classic"/>
+      <config pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="rfm_spi_CSEL_F" tap_mode="classic"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="SPIConverter:rfmadc|MRx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|MTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|TSMTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[0]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[1]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[2]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[3]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[4]" tap_mode="classic"/>
+          <wire name="rfm_spi_CSEL_F" tap_mode="classic"/>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="SPIConverter:rfmadc|MRx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|MTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|TSMTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[0]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[1]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[2]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[3]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[4]" tap_mode="classic"/>
+          <wire name="rfm_spi_CSEL_F" tap_mode="classic"/>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <node data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="rfm_spi_SCLK" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" type="unknown"/>
+          <node is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <node data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <node data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <node data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </node>
+          <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+        </unified_setup_data_view>
+        <data_view>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="rfm_spi_SCLK" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+        </data_view>
+        <setup_view>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="rfm_spi_SCLK" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" is_expanded="true" name="trigger: 2022/12/14 08:03:51  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="256" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'rfm_spi_CSEL_F' == falling edge
+            <power_up enabled="yes">
+            </power_up><op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>1111111111
+            <pwr_up_transitional>1111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+    <signal_set is_expanded="false" name="signal_set: 2022/12/14 14:10:36  #0">
+      <clock name="subclock:SC|clock4" polarity="posedge" tap_mode="classic"/>
+      <config pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="SPIConverter:rfmadc|MRx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|MTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|TSMTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[0]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[1]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[2]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[3]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[4]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|readcommand" tap_mode="classic"/>
+          <wire name="rfm_spi_CSEL_F" tap_mode="classic"/>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="SPIConverter:rfmadc|MRx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|MTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|TSMTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[0]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[1]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[2]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[3]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[4]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|readcommand" tap_mode="classic"/>
+          <wire name="rfm_spi_CSEL_F" tap_mode="classic"/>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <node data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="rising edge" name="rfm_spi_SCLK" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <node is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <node data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <node data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <node data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </node>
+          <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+          <node data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|readcommand" storage_index="8" tap_mode="classic" type="unknown"/>
+        </unified_setup_data_view>
+        <data_view>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="rising edge" name="rfm_spi_SCLK" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|readcommand" storage_index="8" tap_mode="classic" type="unknown"/>
+        </data_view>
+        <setup_view>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="rising edge" name="rfm_spi_SCLK" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|readcommand" storage_index="8" tap_mode="classic" type="unknown"/>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" is_expanded="true" name="trigger: 2022/12/14 14:10:36  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="256" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'rfm_spi_SCLK' == rising edge
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>11111111111
+            <pwr_up_transitional>11111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2022/12/14 14:10:36  #0">
+      <clock name="subclock:SC|clock4" polarity="posedge" tap_mode="classic"/>
+      <config pipeline_level="0" ram_type="AUTO" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="SPIConverter:rfmadc|MRx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|MTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|TSMTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[0]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[1]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[2]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[3]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[4]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|readcommand" tap_mode="classic"/>
+          <wire name="rfm_spi_CSEL_F" tap_mode="classic"/>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="SPIConverter:rfmadc|MRx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|MTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|TSMTx" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[0]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[1]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[2]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[3]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|bitcount[4]" tap_mode="classic"/>
+          <wire name="SPIConverter:rfmadc|readcommand" tap_mode="classic"/>
+          <wire name="rfm_spi_CSEL_F" tap_mode="classic"/>
+          <wire name="rfm_spi_SCLK" tap_mode="classic"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <node data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="rising edge" name="rfm_spi_SCLK" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <node is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <node data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <node data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <node data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <node data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <node data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </node>
+          <node data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <node data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <node data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+          <node data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|readcommand" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" type="unknown"/>
+        </unified_setup_data_view>
+        <data_view>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="rising edge" name="rfm_spi_SCLK" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|readcommand" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" type="unknown"/>
+        </data_view>
+        <setup_view>
+          <net data_index="9" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" level-0="falling edge" name="rfm_spi_CSEL_F" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <net data_index="10" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="true" level-0="rising edge" name="rfm_spi_SCLK" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="0" type="unknown"/>
+          <bus is_selected="false" level-0="alt_or" name="SPIConverter:rfmadc|bitcount[4..0]" order="msb_to_lsb" state="collapse" storage-0="alt_or" storage-1="alt_or" storage-2="alt_or" type="register">
+            <net data_index="7" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[4]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" type="unknown"/>
+            <net data_index="6" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[3]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" type="unknown"/>
+            <net data_index="5" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[2]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" type="unknown"/>
+            <net data_index="4" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[1]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" type="unknown"/>
+            <net data_index="3" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|bitcount[0]" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" type="unknown"/>
+          </bus>
+          <net data_index="2" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|TSMTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" type="unknown"/>
+          <net data_index="0" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MRx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" type="unknown"/>
+          <net data_index="1" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|MTx" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" type="unknown"/>
+          <net data_index="8" duplicate_name_allowed="false" is_data_input="true" is_node_valid="true" is_selected="false" is_storage_input="true" is_trigger_input="false" name="SPIConverter:rfmadc|readcommand" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" type="unknown"/>
+        </setup_view>
+        <trigger_in_editor/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="747867C0" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2022/12/14 14:10:36  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="256" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'rfm_spi_SCLK' == rising edge
+            <power_up enabled="yes">
+            </power_up><op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>11111111111
+            <pwr_up_transitional>11111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: Trig @ 2022/12/15 09:20:04 (0:0:0.4 elapsed)" power_up_mode="false" sample_depth="1024" trigger_position="128">00000000010000000000100000000001000000000010000000000100000000001000000000010000000000100000000001000000000010000000000100000000001000000000010000000000100000000001000000000010000000000100000000001000000000010000000000100000000001000000000010000000000100000000001000000000010000000000100000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111000000001110000000011100000000111000000001110000010111100000101000100001000001000010000010000101000100001010000100010000001000100000010001010000100010100011000100000110001000001100010100011000101000001001000000010010000000100101000001001010001010010000010100100000101001010001010010100001100100000011001000000110010100001100101000111001000001110010000011100101000111001011110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101001110001010011100010100111000101000000001010000000010100000000101000000001010000000010101000000101010001001010000010010100000100101010001001010100001010100000010101000000101010100001010101000110101000001101010000011010101000110101010000011010000000110100000001101010000011010100010110100000101101000001011010100010110101000011101000000111010000001110101000011101011111111010011111110100111111101011111111010100000001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001100101000011001010000110010100001101101000011011011000110000010001100000100011010001000110100001001100000010011000000100110100001001101000110011000001100110000011001101000110011010000010110010100101100101001011011010010110110110101100000101011000001010110100010101101000011011000000110110000001101101000011011010001110110000011101100000111011010001110110101000011100010000111000100001110001000011100010000111000100001110001000011100010000111000100001110001000011100010000111000100001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000111001110001110011100011100111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110111000001101110000011011100000110</data>
+          <extradata>11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111T1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="360"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="8"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="16256"/>
+      <multi attribute="timebars" size="1" value="36"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget height" value="191"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <single attribute="lock mode" value="0"/>
+    <multi attribute="frame size" size="2" value="1714,869"/>
+    <multi attribute="jtag widget size" size="2" value="349,145"/>
+  </global_info>
+</session>

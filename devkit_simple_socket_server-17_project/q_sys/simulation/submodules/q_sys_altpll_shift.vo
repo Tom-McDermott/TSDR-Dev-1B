@@ -1,0 +1,221 @@
+//IP Functional Simulation Model
+//VERSION_BEGIN 20.1 cbx_mgl 2020:06:05:13:25:21:SJ cbx_simgen 2020:06:05:12:04:24:SJ  VERSION_END
+// synthesis VERILOG_INPUT_VERSION VERILOG_2001
+// altera message_off 10463
+
+
+
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// You may only use these simulation model output files for simulation
+// purposes and expressly not for synthesis or any other purposes (in which
+// event Intel disclaims all warranties of any kind).
+
+
+//synopsys translate_off
+
+//synthesis_resources = fiftyfivenm_pll 1 lut 6 
+`timescale 1 ps / 1 ps
+module  q_sys_altpll_shift
+	( 
+	address,
+	areset,
+	c0,
+	c1,
+	c2,
+	c3,
+	c4,
+	clk,
+	configupdate,
+	locked,
+	phasecounterselect,
+	phasedone,
+	phasestep,
+	phaseupdown,
+	read,
+	readdata,
+	reset,
+	scanclk,
+	scanclkena,
+	scandata,
+	scandataout,
+	scandone,
+	write,
+	writedata) /* synthesis synthesis_clearbox=1 */;
+	input   [1:0]  address;
+	input   areset;
+	output   c0;
+	output   c1;
+	output   c2;
+	output   c3;
+	output   c4;
+	input   clk;
+	input   configupdate;
+	output   locked;
+	input   [2:0]  phasecounterselect;
+	output   phasedone;
+	input   phasestep;
+	input   phaseupdown;
+	input   read;
+	output   [31:0]  readdata;
+	input   reset;
+	input   scanclk;
+	input   scanclkena;
+	input   scandata;
+	output   scandataout;
+	output   scandone;
+	input   write;
+	input   [31:0]  writedata;
+
+	reg	q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_pll_lock_sync_138q;
+	reg	q_sys_altpll_shift_pfdena_reg_7q;
+	reg	q_sys_altpll_shift_prev_reset_5q;
+	reg	q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe4a_0_130q;
+	reg	q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe5a_0_133q;
+	reg	q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe6a_0_131q;
+	wire  [4:0]   wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_clk;
+	wire  wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_fbout;
+	wire  wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_locked;
+	wire  s_wire_q_sys_altpll_shift_comb_4_dataout;
+	wire  s_wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_locked_141_dataout;
+	wire  s_wire_q_sys_altpll_shift_w_select_control_18_dataout;
+	wire  s_wire_q_sys_altpll_shift_w_select_status_21_dataout;
+	wire  s_wire_q_sys_altpll_shift_wire_pfdena_reg_ena_16_dataout;
+	wire  s_wire_vcc;
+
+	initial
+	begin
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_pll_lock_sync_138q = 0;
+	end
+	always @ ( posedge wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_locked or  posedge s_wire_q_sys_altpll_shift_comb_4_dataout)
+	begin
+		if (s_wire_q_sys_altpll_shift_comb_4_dataout == 1'b1) 
+		begin
+			q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_pll_lock_sync_138q <= 0;
+		end
+		else 
+		begin
+			q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_pll_lock_sync_138q <= s_wire_vcc;
+		end
+	end
+	initial
+	begin
+		q_sys_altpll_shift_pfdena_reg_7q = 0;
+	end
+	always @ ( posedge clk or  posedge reset)
+	begin
+		if (reset == 1'b1) 
+		begin
+			q_sys_altpll_shift_pfdena_reg_7q <= 1;
+		end
+		else if  (s_wire_q_sys_altpll_shift_wire_pfdena_reg_ena_16_dataout == 1'b1) 
+		begin
+			q_sys_altpll_shift_pfdena_reg_7q <= writedata[1];
+		end
+	end
+	event q_sys_altpll_shift_pfdena_reg_7q_event;
+	initial
+		#1 ->q_sys_altpll_shift_pfdena_reg_7q_event;
+	always @(q_sys_altpll_shift_pfdena_reg_7q_event)
+		q_sys_altpll_shift_pfdena_reg_7q <= 1;
+	initial
+	begin
+		q_sys_altpll_shift_prev_reset_5q = 0;
+		q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe4a_0_130q = 0;
+		q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe5a_0_133q = 0;
+		q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe6a_0_131q = 0;
+	end
+	always @ ( posedge clk or  posedge reset)
+	begin
+		if (reset == 1'b1) 
+		begin
+			q_sys_altpll_shift_prev_reset_5q <= 0;
+			q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe4a_0_130q <= 0;
+			q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe5a_0_133q <= 0;
+			q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe6a_0_131q <= 0;
+		end
+		else 
+		begin
+			q_sys_altpll_shift_prev_reset_5q <= (s_wire_q_sys_altpll_shift_wire_pfdena_reg_ena_16_dataout & writedata[0]);
+			q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe4a_0_130q <= s_wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_locked_141_dataout;
+			q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe5a_0_133q <= q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe4a_0_130q;
+			q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe6a_0_131q <= q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe5a_0_133q;
+		end
+	end
+	fiftyfivenm_pll   q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161
+	( 
+	.activeclock(),
+	.areset(s_wire_q_sys_altpll_shift_comb_4_dataout),
+	.clk(wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_clk),
+	.clkbad(),
+	.fbin(wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_fbout),
+	.fbout(wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_fbout),
+	.inclk({1'b0, clk}),
+	.locked(wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_locked),
+	.phasedone(),
+	.scandataout(),
+	.scandone(),
+	.vcooverrange(),
+	.vcounderrange(),
+	.clkswitch(),
+	.configupdate(),
+	.pfdena(),
+	.phasecounterselect(),
+	.phasestep(),
+	.phaseupdown(),
+	.scanclk(),
+	.scanclkena(),
+	.scandata()
+	);
+	defparam
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.bandwidth_type = "auto",
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk0_divide_by = 1,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk0_duty_cycle = 50,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk0_multiply_by = 5,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk0_phase_shift = "0",
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk1_divide_by = 2,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk1_duty_cycle = 50,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk1_multiply_by = 1,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk1_phase_shift = "15000",
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk2_divide_by = 20,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk2_duty_cycle = 50,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk2_multiply_by = 1,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.clk2_phase_shift = "0",
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.compensate_clock = "clk0",
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.inclk0_input_frequency = 20000,
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.lpm_type = "fiftyfivenm_pll",
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.operation_mode = "normal",
+		q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161.pll_type = "auto";
+	assign
+		c0 = wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_clk[0],
+		c1 = wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_clk[1],
+		c2 = wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_clk[2],
+		c3 = wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_clk[3],
+		c4 = wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_clk[4],
+		locked = s_wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_locked_141_dataout,
+		phasedone = 1'b0,
+		readdata = {{30{1'b0}}, (((q_sys_altpll_shift_pfdena_reg_7q & s_wire_q_sys_altpll_shift_w_select_control_18_dataout) | s_wire_q_sys_altpll_shift_w_select_status_21_dataout) & read), (((q_sys_altpll_shift_prev_reset_5q & s_wire_q_sys_altpll_shift_w_select_control_18_dataout) | (s_wire_q_sys_altpll_shift_w_select_status_21_dataout & q_sys_altpll_shift_q_sys_altpll_shift_stdsync_sv6_stdsync2_q_sys_altpll_shift_dffpipe_l2c_dffpipe3_dffe6a_0_131q)) & read)},
+		s_wire_q_sys_altpll_shift_comb_4_dataout = (q_sys_altpll_shift_prev_reset_5q | areset),
+		s_wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_locked_141_dataout = (q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_pll_lock_sync_138q & wire_q_sys_altpll_shift_q_sys_altpll_shift_altpll_7ig2_sd1_fiftyfivenm_pll_pll7_161_locked),
+		s_wire_q_sys_altpll_shift_w_select_control_18_dataout = (address[0] & (~ address[1])),
+		s_wire_q_sys_altpll_shift_w_select_status_21_dataout = ((~ address[0]) & (~ address[1])),
+		s_wire_q_sys_altpll_shift_wire_pfdena_reg_ena_16_dataout = (s_wire_q_sys_altpll_shift_w_select_control_18_dataout & write),
+		s_wire_vcc = 1'b1,
+		scandataout = 1'b0,
+		scandone = 1'b0;
+endmodule //q_sys_altpll_shift
+//synopsys translate_on
+//VALID FILE

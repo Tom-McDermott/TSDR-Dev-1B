@@ -1,0 +1,157 @@
+
+10-04-2021   After rebuild, resolve edits, etc., same failure.
+
+Failure on simple_socket_server startup.....
+(it has a good MAC address, and the link is sucessfully autonegotiating 1G)
+when using the 5 second delay.
+
+
+InterNiche Portable TCP/IP, v3.1 
+
+Copyright 1996-2008 by InterNiche Technologies. All rights reserved. 
+altera_eth_tse_init 0
+prep_tse_mac 0
+
+Can't read the MAC address from your board. We will assign you
+a MAC address.
+
+Please enter your 9-digit serial number. This is printed on a 
+label under your Nios dev. board. The first 3 digits of the 
+label are ASJ and the serial number follows this.
+ -->Created "Inet main" task (Prio: 2)
+Created "clock tick" task (Prio: 3)
+
+255255249
+255255249
+Your Ethernet MAC address is 00:07:ed:2a:22:16
+prepped 1 interface, initializing...
+tse_mac_init 0
+List of PHY profiles supported (Total profiles = 5)...
+Profile No. 0   :
+PHY Name        : Marvell 88E1111
+PHY OUI         : 0x005043
+PHY Model Num.  : 0x0c
+PHY Rev. Num.   : 0x02
+Status Register : 0x11
+Speed Bit       : 14
+Duplex Bit      : 13
+Link Bit        : 10
+
+Profile No. 1   :
+PHY Name        : Marvell Quad PHY 88E1145
+PHY OUI         : 0x005043
+PHY Model Num.  : 0x0d
+PHY Rev. Num.   : 0x02
+Status Register : 0x11
+Speed Bit       : 14
+Duplex Bit      : 13
+Link Bit        : 10
+
+Profile No. 2   :
+PHY Name        : National DP83865
+PHY OUI         : 0x080017
+PHY Model Num.  : 0x07
+PHY Rev. Num.   : 0x0a
+Status Register : 0x11
+Speed Bit       : 3
+Duplex Bit      : 1
+Link Bit        : 2
+
+Profile No. 3   :
+PHY Name        : National DP83848C
+PHY OUI         : 0x080017
+PHY Model Num.  : 0x09
+PHY Rev. Num.   : 0x00
+Status Register : 0x00
+Speed Bit       : 0
+Duplex Bit      : 0
+Link Bit        : 0
+
+Profile No. 4   :
+PHY Name        : Intel PEF7071
+PHY OUI         : 0x355969
+PHY Model Num.  : 0x00
+PHY Rev. Num.   : 0x01
+Status Register : 0x00
+Speed Bit       : 0
+Duplex Bit      : 0
+Link Bit        : 0
+
+INFO    : TSE MAC 0 found at address 0x18003800
+INFO    : Multi Channel            = No
+INFO    : MDIO Shared              = No
+INFO    : MAC Type                 = 10/100/1000 Ethernet MAC
+INFO    : MAC Address              = 0x18003800
+INFO    : MAC Device               = tse_mac_device[0]
+INFO    : PHY Marvell 88E1111 found at PHY address 0x00 of MAC Group[0]
+INFO    : PHY OUI             =  0x005043
+INFO    : PHY Model Number    =  0x0c
+INFO    : PHY Revision Number =  0x2
+INFO    : PHY[0.0] - Automatically mapped to tse_mac_device[0]
+INFO    : PHY[0.0] - Advertisement of 1000 Base-T Full Duplex set to 1
+INFO    : PHY[0.0] - Advertisement of 1000 Base-T Half Duplex set to 1
+INFO    : PHY[0.0] - Advertisement of 100 Base-T4 set to 0
+INFO    : PHY[0.0] - Advertisement of 100 Base-TX Full Duplex set to 1
+INFO    : PHY[0.0] - Advertisement of 100 Base-TX Half Duplex set to 1
+INFO    : PHY[0.0] - Advertisement of 10 Base-TX Full Duplex set to 1
+INFO    : PHY[0.0] - Advertisement of 10 Base-TX Half Duplex set to 1
+INFO    : PHY[0.0] - Restart Auto-Negotiation, checking PHY link...
+INFO    : PHY[0.0] - Auto-Negotiation PASSED
+INFO    : Applying additional PHY configuration of Marvell 88E1111
+INFO    : Applying additional user PHY configuration
+MARVELL : Mode changed to RGMII/Modified MII to Copper mode
+MARVELL : Enable RGMII Timing Control
+MARVELL : PHY reset
+
+INFO    : PHY Marvell 88E1111 found at PHY address 0x01 of MAC Group[0]
+INFO    : PHY OUI             =  0x005043
+INFO    : PHY Model Number    =  0x0c
+INFO    : PHY Revision Number =  0x2
+WARNING : PHY[0.X] - Mapping of PHY to MAC failed! Make sure the PHY address is defined correctly in tse_mac_device[] structure, and number of PHYs connected is equivalent to number of channel
+
+WARNING : MAC Group[0] - Number of PHY connected is not equal to the number of channel, Number of PHY : 2, Channel : 1
+INFO    : PHY[0.0] - Checking link...
+INFO    : PHY[0.0] - Link established
+INFO    : PHY[0.0] - Speed = 1000, Duplex = Full
+OK, x=0, CMD_CONFIG=0x00000000
+
+MAC post-initialization: CMD_CONFIG=0x0400020b
+[tse_msgdma_read_init] RX descriptor chain desc (9 depth) created
+mctest init called
+IP address of et1 : 0.0.0.0
+No free buffers for rx
+No free buffers for rx
+No free buffers for rx
+No free buffers for rx
+panic: pktdemux: got null pkt
+dtrap - needs breakpoint
+ip_exit: calling func 0x8025fdc
+netclose: closing iface Altera TSE MAC ethernet
+ip_exit: calling func 0x802ce28
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+grep -rn --include=\*.c 'the pattern to search'
+
+
+simple_socket_server_bsp/drivers/src/altera_avalon_tse.c:        tse_dprintf(2, "WARNING : PHY[%d.X] - Mapping of PHY to MAC failed! Make sure the PHY address is defined correctly in tse_mac_device[] structure, and number of PHYs connected is equ...
+
+simple_socket_server_bsp/drivers/src/altera_avalon_tse.c:            tse_dprintf(3, "WARNING : MAC Group[%d] - Number of PHY connected is not equal to the number of channel, Number of PHY : %d, Channel : %d\n", mac_group_index, phy_info_count, pmac_group->channel);
+
+
+NIOS2_simple_socket_server_bsp/iniche/src/ipmc/u_mctest.c:73:   printf("mctest init called\n");
+
+simple_socket_server_bsp/drivers/src/iniche/ins_tse_mac.c:830          dprintf("No free buffers for rx\n");
+
+simple_socket_server_bsp/iniche/src/ip/ipnet.c:475            dprintf("pktdemux: bad Iface type %ld\n",ifc->n_mib->ifType);
+
+simple_socket_server_bsp/iniche/src/nios2/brdutils.c:54   printf("dtrap - needs breakpoint\n");
+
+simple_socket_server_bsp/iniche/src/misclib/in_utils.c:218   dprintf("panic: %s\n", msg);
+
+simple_socket_server_bsp/iniche/src/ip/ipnet.c:385      if (!pkt) panic("pktdemux: got null pkt");
+
+

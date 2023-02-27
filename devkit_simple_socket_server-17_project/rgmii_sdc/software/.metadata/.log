@@ -1,0 +1,76 @@
+!SESSION 2015-05-21 14:10:00.917 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /tools_archive/acds/15.0/145/linux64/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /tools_archive/acds/15.0/145/linux64/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.ui 2 0 2015-05-21 14:11:05.538
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-05-21 14:11:05.538
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.linuxtools.systemtap.ui.graphing', id='org.eclipse.linuxtools.systemtap.ui.graphing.commands.SaveGraphImage', categoryId='org.eclipse.linuxtools.systemtap.ui.graphing.category.file'
+
+!ENTRY org.eclipse.ui 2 0 2015-05-21 14:11:06.876
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-05-21 14:11:06.876
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.linuxtools.systemtap.ui.graphing', id='org.eclipse.linuxtools.systemtap.ui.graphing.commands.SaveGraphImage', categoryId='org.eclipse.linuxtools.systemtap.ui.graphing.category.file'
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-21 14:11:14.127
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-21 14:18:29.593
+!MESSAGE Indexed 'niosII_simple_socket_server_bsp' (225 sources, 298 headers) in 5.89 sec: 17,423 declarations; 53,409 references; 9 unresolved inclusions; 4 syntax errors; 274 unresolved names (0.39%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-21 14:18:32.068
+!MESSAGE Indexed 'niosII_simple_socket_server' (6 sources, 32 headers) in 0.18 sec: 1,690 declarations; 2,953 references; 23 unresolved inclusions; 6 syntax errors; 121 unresolved names (2.54%)
+
+!ENTRY org.eclipse.core.resources 2 2 2015-05-21 14:20:29.000
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-05-21 14:20:29.000
+!MESSAGE The project description file (.project) for 'RemoteSystemsTempFiles' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-21 14:20:35.309
+!MESSAGE Indexed 'niosII_simple_socket_server_bsp' (225 sources, 298 headers) in 5.79 sec: 17,435 declarations; 53,149 references; 47 unresolved inclusions; 5 syntax errors; 357 unresolved names (0.50%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-21 14:20:37.895
+!MESSAGE Indexed 'niosII_simple_socket_server' (6 sources, 32 headers) in 0.31 sec: 1,690 declarations; 2,953 references; 23 unresolved inclusions; 6 syntax errors; 121 unresolved names (2.54%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-21 14:38:12.812
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-BlasterII on SJ-ACASTILL-947 [USB-1]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x2016b8]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-05-21 14:38:14.687
+!MESSAGE Executing: [/bin/bash, -c, nios2-download '--cable=USB-BlasterII on SJ-ACASTILL-947 [USB-1]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x2016b8 /data/acastill/simple_socket_10M50/software/niosII_simple_socket_server/niosII_simple_socket_server.elf]
+!SESSION 2015-06-04 13:18:07.670 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization /tools_archive/acds/15.0/145/linux64/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization /tools_archive/acds/15.0/145/linux64/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-04 13:19:13.196
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2015-06-04 13:19:14.267
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-06-04 13:19:14.267
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.linuxtools.systemtap.ui.graphing', id='org.eclipse.linuxtools.systemtap.ui.graphing.commands.SaveGraphImage', categoryId='org.eclipse.linuxtools.systemtap.ui.graphing.category.file'
+
+!ENTRY org.eclipse.ui 2 0 2015-06-04 13:19:14.758
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-06-04 13:19:14.758
+!MESSAGE Commands should really have a category: plug-in='org.eclipse.linuxtools.systemtap.ui.graphing', id='org.eclipse.linuxtools.systemtap.ui.graphing.commands.SaveGraphImage', categoryId='org.eclipse.linuxtools.systemtap.ui.graphing.category.file'
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-06-04 13:19:22.668
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

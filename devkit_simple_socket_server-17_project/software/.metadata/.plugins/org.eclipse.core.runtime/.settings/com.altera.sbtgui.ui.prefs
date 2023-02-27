@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+newSoftwareExampleWizardPage.defaultLocation=/home/tom/Eth-TSDR-04/devkit_simple_socket_server-17_project/software/MOD_socket_server
+newSoftwareExampleWizardPage.sopcinfoFile=/home/tom/Eth-TSDR-04/devkit_simple_socket_server-17_project/q_sys.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=/home/tom/Eth-TSDR-04/devkit_simple_socket_server-17_project/software/MOD_socket_server_bsp

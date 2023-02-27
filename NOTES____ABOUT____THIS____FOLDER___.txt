@@ -1,0 +1,78 @@
+
+**** NOTE about this folder
+
+08-07-2022     The software BSP build environment got corrupted in Eth-05.
+(It works on my machine, but not a different one).
+
+Rev 06 starts back at Rev 04 then incorporates the QSYS (Platform Designer)
+changes (from Rev 5) to add the I2C, SPI peripherals, and thew updates the
+C code (from Rev 5) on the NIOS processor to implement portions of 
+the LH_DE protocol.
+
+Essentially to get Rev 05 working but with an intact environment for 
+(hopefully) all machines.
+
+
+
+
+
+1. This is the jumping off point to start the test bench load - for testing
+the receiver and clock modules.  Ignoring the DE-LH protocol and general
+use, this will be hard-coded to get to a working test fixture as fast as
+possible.
+
+  A. The MAC address will be hard-coded and the code to read/write flash
+  to store DHCP, static addresses, and MAC addresses will be skipped over.
+  
+  B. Will need to add the I2C and SPI peripherals.  Do that soon to avoid
+  having to re-generate and store code changes too often.
+  
+ 10-15-2021
+ 
+  1. OpenHPSDR discovery working using UDP sockets.
+ 
+ 08-10-2022
+ 
+  1. Back-ported changes from ETH-TSDR-05 into this project
+  ETH-TSDR-06.  Kept the directory structure of ETH-TSDR-04 with a 
+  separate project for the BSP.
+  
+  2. The target directory for the BSP build has to be manually edited
+  in the .bsp file anytime the project is moved to another directory.
+  Otherwse it will over-write the old directory.  The BSP settings seems to
+  pick up the correct directory, it's just the target that gets
+  messed up. There is no place to edit the BSP from the gui, the XML
+  has to be manually edited (line 7).
+  
+  3. Sucessful build. Had to add system.h to the project using the GUI.
+  This is so it can reference system.h in the BSP directory. Also add
+  #include system.h to the C code.   system.h defines the hardware
+  addresses, bases, names, interrupts, etc. 
+    
+ 08-14-2022
+ 
+  1. The I2C connection to the FPGA pins goes through an open-drain
+  driver. The Embedded Peripherals IP User Guide (21.1) chapter 15.7.3
+  describes the verilog code needed to connect the I2C Master serial
+  interface.   /home/tom/Quartus II/Quartus II Handbook/
+  
+  It says that it is recommended to use the "I/O IP Core" to generate to
+  open-drain bidirectional I/O buffer.  Searching of the document and
+  the internet does not reveal anything with this name related to
+  Quartus. Does this refer to Assignments -> Pin Planner in Quartus II ?
+  Internet docs say the pin planner changes the .qsf file.
+  
+ 09-09-2022
+ 
+  Resolved Pin-check assignment errors (temporarily):
+ 
+  1. The DevKit board will not allow 3.3v IO on the I2C_CKM_C0 and
+  I2C_CKM_C1 interfaces. Have set these to 2.5v (default) IO for the
+  time being.
+
+  2.The RXM_SPI data is temporarily set as output, it will need to
+  be changed to BiDir when the Verilog is ready for the ADC device
+  special SPI bidirectional data mode.
+
+ 
+  
