@@ -2274,9 +2274,9 @@ wire             write_strobe;
   always @(posedge clk or negedge reset_n)
     begin
       if (reset_n == 0)
-          oci_ienable <= 32'b00000000000000000000000000111111;
+          oci_ienable <= 32'b00000000000000000000000000011111;
       else if (take_action_oci_intr_mask_reg)
-          oci_ienable <= writedata | ~(32'b00000000000000000000000000111111);
+          oci_ienable <= writedata | ~(32'b00000000000000000000000000011111);
     end
 
 
@@ -3561,7 +3561,6 @@ wire             A_wrctl_data_ienable_reg_irq1;
 wire             A_wrctl_data_ienable_reg_irq2;
 wire             A_wrctl_data_ienable_reg_irq3;
 wire             A_wrctl_data_ienable_reg_irq4;
-wire             A_wrctl_data_ienable_reg_irq5;
 wire             A_wrctl_data_status_reg_pie;
 wire             A_wrctl_estatus;
 wire             A_wrctl_ienable;
@@ -5003,9 +5002,6 @@ wire             W_ienable_reg_irq3_wr_en;
 reg              W_ienable_reg_irq4;
 wire             W_ienable_reg_irq4_nxt;
 wire             W_ienable_reg_irq4_wr_en;
-reg              W_ienable_reg_irq5;
-wire             W_ienable_reg_irq5_nxt;
-wire             W_ienable_reg_irq5_wr_en;
 wire    [ 55: 0] W_inst;
 wire    [ 31: 0] W_ipending_reg;
 reg              W_ipending_reg_irq0;
@@ -5023,9 +5019,6 @@ wire             W_ipending_reg_irq3_wr_en;
 reg              W_ipending_reg_irq4;
 wire             W_ipending_reg_irq4_nxt;
 wire             W_ipending_reg_irq4_wr_en;
-reg              W_ipending_reg_irq5;
-wire             W_ipending_reg_irq5_nxt;
-wire             W_ipending_reg_irq5_wr_en;
 wire             W_is_opx_inst;
 reg     [ 31: 0] W_iw;
 wire    [  4: 0] W_iw_a;
@@ -6854,7 +6847,7 @@ defparam q_sys_cpu_cpu_bht.lpm_file = "q_sys_cpu_cpu_bht_ram.hex";
     M_valid_from_E & ~A_pipe_flush) | A_refetch_required;
 
   assign A_pipe_flush_waddr_nxt = (A_refetch_required)? A_pc :
-    (M_exc_break)? 100667912 :
+    (M_exc_break)? 100665864 :
     (M_exc_any)? 33554504 :
     (M_refetch)? M_pc :
     (M_ctrl_jmp_indirect)? M_target_pcb[28 : 2] :
@@ -7943,7 +7936,6 @@ defparam q_sys_cpu_cpu_register_bank_b.lpm_file = "q_sys_cpu_cpu_rf_ram_b.hex";
   assign A_wrctl_data_ienable_reg_irq2 = A_inst_result[2];
   assign A_wrctl_data_ienable_reg_irq3 = A_inst_result[3];
   assign A_wrctl_data_ienable_reg_irq4 = A_inst_result[4];
-  assign A_wrctl_data_ienable_reg_irq5 = A_inst_result[5];
   assign A_wrctl_data_cdsr_reg_status = A_inst_result[31 : 0];
   assign W_status_reg_pie_nxt = A_exc_any_active  ? 1'b0 :
     A_valid           ? W_status_reg_pie_inst_nxt : 
@@ -8059,20 +8051,6 @@ defparam q_sys_cpu_cpu_register_bank_b.lpm_file = "q_sys_cpu_cpu_rf_ram_b.hex";
     end
 
 
-  assign W_ienable_reg_irq5_nxt = (A_wrctl_ienable & A_valid) ? 
-    A_wrctl_data_ienable_reg_irq5 :
-    W_ienable_reg_irq5;
-
-  assign W_ienable_reg_irq5_wr_en = W_en;
-  always @(posedge clk or negedge reset_n)
-    begin
-      if (reset_n == 0)
-          W_ienable_reg_irq5 <= 0;
-      else if (W_ienable_reg_irq5_wr_en)
-          W_ienable_reg_irq5 <= W_ienable_reg_irq5_nxt;
-    end
-
-
   assign W_ipending_reg_irq0_nxt = irq[0] & W_ienable_reg_irq0 & oci_ienable[0];
   assign W_ipending_reg_irq0_wr_en = 1;
   always @(posedge clk or negedge reset_n)
@@ -8128,17 +8106,6 @@ defparam q_sys_cpu_cpu_register_bank_b.lpm_file = "q_sys_cpu_cpu_rf_ram_b.hex";
     end
 
 
-  assign W_ipending_reg_irq5_nxt = irq[5] & W_ienable_reg_irq5 & oci_ienable[5];
-  assign W_ipending_reg_irq5_wr_en = 1;
-  always @(posedge clk or negedge reset_n)
-    begin
-      if (reset_n == 0)
-          W_ipending_reg_irq5 <= 0;
-      else if (W_ipending_reg_irq5_wr_en)
-          W_ipending_reg_irq5 <= W_ipending_reg_irq5_nxt;
-    end
-
-
   assign W_exception_reg_cause_nxt = (A_exc_active_no_break & 
     ~A_exc_ext_intr_active) ? 
     A_exc_highest_pri_cause_code :
@@ -8182,8 +8149,8 @@ defparam q_sys_cpu_cpu_register_bank_b.lpm_file = "q_sys_cpu_cpu_rf_ram_b.hex";
   assign W_status_reg = { 31'd0, W_status_reg_pie };
   assign W_estatus_reg = { 31'd0, W_estatus_reg_pie };
   assign W_bstatus_reg = { 31'd0, W_bstatus_reg_pie };
-  assign W_ienable_reg = { 26'd0, W_ienable_reg_irq5, W_ienable_reg_irq4, W_ienable_reg_irq3, W_ienable_reg_irq2, W_ienable_reg_irq1, W_ienable_reg_irq0 };
-  assign W_ipending_reg = { 26'd0, W_ipending_reg_irq5, W_ipending_reg_irq4, W_ipending_reg_irq3, W_ipending_reg_irq2, W_ipending_reg_irq1, W_ipending_reg_irq0 };
+  assign W_ienable_reg = { 27'd0, W_ienable_reg_irq4, W_ienable_reg_irq3, W_ienable_reg_irq2, W_ienable_reg_irq1, W_ienable_reg_irq0 };
+  assign W_ipending_reg = { 27'd0, W_ipending_reg_irq4, W_ipending_reg_irq3, W_ipending_reg_irq2, W_ipending_reg_irq1, W_ipending_reg_irq0 };
   assign W_cpuid_reg = { 31'd0, 1'd0 };
   assign W_exception_reg = { 25'd0, W_exception_reg_cause, 2'd0 };
   assign W_badaddr_reg = { 3'd0, W_badaddr_reg_baddr };

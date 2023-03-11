@@ -163,6 +163,13 @@ module q_sys_mm_interconnect_0_router_010
 
 
 
+    // -------------------------------------------------------
+    // Write and read transaction signals
+    // -------------------------------------------------------
+    wire write_transaction;
+    assign write_transaction = sink_data[PKT_TRANS_WRITE];
+    wire read_transaction;
+    assign read_transaction  = sink_data[PKT_TRANS_READ];
 
 
     q_sys_mm_interconnect_0_router_010_default_decode the_default_decode(
@@ -185,7 +192,19 @@ module q_sys_mm_interconnect_0_router_010
 
 
         if (destid == 0 ) begin
-            src_channel = 22'b1;
+            src_channel = 22'b0001;
+        end
+
+        if (destid == 1  && read_transaction) begin
+            src_channel = 22'b0010;
+        end
+
+        if (destid == 7  && read_transaction) begin
+            src_channel = 22'b0100;
+        end
+
+        if (destid == 4  && write_transaction) begin
+            src_channel = 22'b1000;
         end
 
 

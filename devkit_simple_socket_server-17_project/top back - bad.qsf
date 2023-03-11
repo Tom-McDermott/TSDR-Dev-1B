@@ -343,28 +343,38 @@ set_location_assignment PIN_Y18 -to ckm_id_scl
 set_location_assignment PIN_W3 -to rfm_spi_BIDIR
 set_location_assignment PIN_U7 -to rfm_spi_CSEL_F
 set_location_assignment PIN_W4 -to rfm_spi_SCLK
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[14]
+set_global_assignment -name VERILOG_FILE DDR_RXData.v
+set_global_assignment -name VERILOG_FILE SPIconverter.v
+set_global_assignment -name VERILOG_FILE I2cBuf.v
+set_global_assignment -name SDC_FILE m10_rgmii.out.sdc
+set_global_assignment -name QIP_FILE enet_gtx_clk_ddio/enet_gtx_clk_ddio.qip
+set_global_assignment -name QIP_FILE clkctrl/synthesis/clkctrl.qip
+set_global_assignment -name QIP_FILE q_sys/synthesis/q_sys.qip
+set_global_assignment -name VERILOG_FILE m10_rgmii.v
+set_global_assignment -name VERILOG_FILE subclock.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[14]
 set_location_assignment PIN_AB13 -to DDRRXM[14]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[13]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[13]
 set_location_assignment PIN_AB12 -to DDRRXM[13]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[12]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[12]
 set_location_assignment PIN_AB11 -to DDRRXM[12]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[11]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[11]
 set_location_assignment PIN_AB10 -to DDRRXM[11]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[10]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[10]
 set_location_assignment PIN_Y11 -to DDRRXM[10]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[9]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[9]
 set_location_assignment PIN_W11 -to DDRRXM[9]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[8]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[7]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[6]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[5]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[4]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[3]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM[0]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to RXMCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[8]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[7]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DDRRXM[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to RXMCLK
 set_location_assignment PIN_AB18 -to DDRRXM[8]
 set_location_assignment PIN_AB17 -to DDRRXM[7]
 set_location_assignment PIN_AA16 -to DDRRXM[6]
@@ -375,16 +385,19 @@ set_location_assignment PIN_AB15 -to DDRRXM[2]
 set_location_assignment PIN_AA14 -to DDRRXM[1]
 set_location_assignment PIN_AB5 -to DDRRXM[0]
 set_location_assignment PIN_V9 -to RXMCLK
-
-
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DDRRXM
-set_global_assignment -name VERILOG_FILE RXData32.v
-set_global_assignment -name VERILOG_FILE SPIconverter.v
-set_global_assignment -name VERILOG_FILE I2cBuf.v
-set_global_assignment -name SDC_FILE m10_rgmii.out.sdc
-set_global_assignment -name QIP_FILE enet_gtx_clk_ddio/enet_gtx_clk_ddio.qip
-set_global_assignment -name QIP_FILE clkctrl/synthesis/clkctrl.qip
-set_global_assignment -name QIP_FILE q_sys/synthesis/q_sys.qip
-set_global_assignment -name VERILOG_FILE m10_rgmii.v
-set_global_assignment -name VERILOG_FILE subclock.v
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[0](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[1](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[2](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[3](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[4](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[5](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[6](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[7](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[8](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[9](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[10](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[11](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[12](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[13](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "DDRRXM[14](n)"
+set_instance_assignment -name IO_STANDARD "1.8 V" -to "RXMCLK(n)"

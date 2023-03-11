@@ -3,6 +3,7 @@ module q_sys (
 	altpll_shift_c0_clk,
 	altpll_shift_locked_conduit_export,
 	clock_bridge_0_in_clk_clk,
+	clock_bridge_1_in_clk_clk,
 	enet_pll_c0_clk,
 	enet_pll_c1_clk,
 	enet_pll_c2_clk,
@@ -26,6 +27,9 @@ module q_sys (
 	ext_flash_flash_dataout_conduit_dataout,
 	ext_flash_flash_dclk_out_conduit_dclk_out,
 	ext_flash_flash_ncs_conduit_ncs,
+	fifo_0_in_valid,
+	fifo_0_in_data,
+	fifo_0_in_ready,
 	i2c_ckm_c0_i2c_serial_sda_in,
 	i2c_ckm_c0_i2c_serial_scl_in,
 	i2c_ckm_c0_i2c_serial_sda_oe,
@@ -62,9 +66,6 @@ module q_sys (
 	memory_mem_dqs,
 	memory_mem_dqs_n,
 	memory_mem_odt,
-	msgdma_rxm_st_sink_data,
-	msgdma_rxm_st_sink_valid,
-	msgdma_rxm_st_sink_ready,
 	reset_reset_n,
 	spi_rxm_external_MISO,
 	spi_rxm_external_MOSI,
@@ -75,6 +76,7 @@ module q_sys (
 	output		altpll_shift_c0_clk;
 	output		altpll_shift_locked_conduit_export;
 	input		clock_bridge_0_in_clk_clk;
+	input		clock_bridge_1_in_clk_clk;
 	output		enet_pll_c0_clk;
 	output		enet_pll_c1_clk;
 	output		enet_pll_c2_clk;
@@ -98,6 +100,9 @@ module q_sys (
 	inout	[3:0]	ext_flash_flash_dataout_conduit_dataout;
 	output		ext_flash_flash_dclk_out_conduit_dclk_out;
 	output	[0:0]	ext_flash_flash_ncs_conduit_ncs;
+	input		fifo_0_in_valid;
+	input	[31:0]	fifo_0_in_data;
+	output		fifo_0_in_ready;
 	input		i2c_ckm_c0_i2c_serial_sda_in;
 	input		i2c_ckm_c0_i2c_serial_scl_in;
 	output		i2c_ckm_c0_i2c_serial_sda_oe;
@@ -134,9 +139,6 @@ module q_sys (
 	inout	[0:0]	memory_mem_dqs;
 	inout	[0:0]	memory_mem_dqs_n;
 	output	[0:0]	memory_mem_odt;
-	input	[63:0]	msgdma_rxm_st_sink_data;
-	input		msgdma_rxm_st_sink_valid;
-	output		msgdma_rxm_st_sink_ready;
 	input		reset_reset_n;
 	input		spi_rxm_external_MISO;
 	output		spi_rxm_external_MOSI;

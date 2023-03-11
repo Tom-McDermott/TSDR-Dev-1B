@@ -2,6 +2,7 @@
 		.altpll_shift_c0_clk                         (<connected-to-altpll_shift_c0_clk>),                         //                     altpll_shift_c0.clk
 		.altpll_shift_locked_conduit_export          (<connected-to-altpll_shift_locked_conduit_export>),          //         altpll_shift_locked_conduit.export
 		.clock_bridge_0_in_clk_clk                   (<connected-to-clock_bridge_0_in_clk_clk>),                   //               clock_bridge_0_in_clk.clk
+		.clock_bridge_1_in_clk_clk                   (<connected-to-clock_bridge_1_in_clk_clk>),                   //               clock_bridge_1_in_clk.clk
 		.enet_pll_c0_clk                             (<connected-to-enet_pll_c0_clk>),                             //                         enet_pll_c0.clk
 		.enet_pll_c1_clk                             (<connected-to-enet_pll_c1_clk>),                             //                         enet_pll_c1.clk
 		.enet_pll_c2_clk                             (<connected-to-enet_pll_c2_clk>),                             //                         enet_pll_c2.clk
@@ -25,6 +26,9 @@
 		.ext_flash_flash_dataout_conduit_dataout     (<connected-to-ext_flash_flash_dataout_conduit_dataout>),     //             ext_flash_flash_dataout.conduit_dataout
 		.ext_flash_flash_dclk_out_conduit_dclk_out   (<connected-to-ext_flash_flash_dclk_out_conduit_dclk_out>),   //            ext_flash_flash_dclk_out.conduit_dclk_out
 		.ext_flash_flash_ncs_conduit_ncs             (<connected-to-ext_flash_flash_ncs_conduit_ncs>),             //                 ext_flash_flash_ncs.conduit_ncs
+		.fifo_0_in_valid                             (<connected-to-fifo_0_in_valid>),                             //                           fifo_0_in.valid
+		.fifo_0_in_data                              (<connected-to-fifo_0_in_data>),                              //                                    .data
+		.fifo_0_in_ready                             (<connected-to-fifo_0_in_ready>),                             //                                    .ready
 		.i2c_ckm_c0_i2c_serial_sda_in                (<connected-to-i2c_ckm_c0_i2c_serial_sda_in>),                //               i2c_ckm_c0_i2c_serial.sda_in
 		.i2c_ckm_c0_i2c_serial_scl_in                (<connected-to-i2c_ckm_c0_i2c_serial_scl_in>),                //                                    .scl_in
 		.i2c_ckm_c0_i2c_serial_sda_oe                (<connected-to-i2c_ckm_c0_i2c_serial_sda_oe>),                //                                    .sda_oe
@@ -61,9 +65,6 @@
 		.memory_mem_dqs                              (<connected-to-memory_mem_dqs>),                              //                                    .mem_dqs
 		.memory_mem_dqs_n                            (<connected-to-memory_mem_dqs_n>),                            //                                    .mem_dqs_n
 		.memory_mem_odt                              (<connected-to-memory_mem_odt>),                              //                                    .mem_odt
-		.msgdma_rxm_st_sink_data                     (<connected-to-msgdma_rxm_st_sink_data>),                     //                  msgdma_rxm_st_sink.data
-		.msgdma_rxm_st_sink_valid                    (<connected-to-msgdma_rxm_st_sink_valid>),                    //                                    .valid
-		.msgdma_rxm_st_sink_ready                    (<connected-to-msgdma_rxm_st_sink_ready>),                    //                                    .ready
 		.reset_reset_n                               (<connected-to-reset_reset_n>),                               //                               reset.reset_n
 		.spi_rxm_external_MISO                       (<connected-to-spi_rxm_external_MISO>),                       //                    spi_rxm_external.MISO
 		.spi_rxm_external_MOSI                       (<connected-to-spi_rxm_external_MOSI>),                       //                                    .MOSI

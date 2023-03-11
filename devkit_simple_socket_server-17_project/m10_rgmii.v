@@ -89,7 +89,7 @@ module  m10_rgmii (
 		  output 			subclock12_5,
 		  
 		  // DDR_RXM
-		  input	wire		DDRRXM[0:14],
+		  input	wire		[14:0] DDRRXM,
 		  input	wire		RXMCLK
 
         );
@@ -253,8 +253,14 @@ q_sys               q_sys_inst (
 						  .spi_rxm_external_MISO                       						  (rfm_spi_MISO),			        //                    spi_rxm_external.MISO
 						  .spi_rxm_external_MOSI                       						  (rfm_spi_MOSI),       		  //                                    .MOSI
 						  .spi_rxm_external_SCLK                       						  (rfm_spi_SCLK),        		  //                                    .SCLK
-						  .spi_rxm_external_SS_n                       						  (rfm_spi_CSEL_F)       		  //                                    .SS_n
-	
+						  .spi_rxm_external_SS_n                       						  (rfm_spi_CSEL_F),       		  //                                    .SS_n
+						  
+						  // RF Module RX data and clock 
+						  .clock_bridge_1_in_clk_clk                   						  (dmuxclk),                    //                 clock_bridge_1_in_clk.clk
+						  .fifo_0_in_valid                             						  (dmuxvalid),                  //                           fifo_0_in.valid
+						  .fifo_0_in_data                              						  (dmuxdata),                   //                                    .data
+						  .fifo_0_in_ready                             						  (fifoready)                   //                                    .ready
+
                     );
 
 //Heart beat by 50MHz clock
@@ -339,7 +345,7 @@ I2CBUF i2cckmid (
 
 subclock SC (
 	.clock1	(clk_50_max10),
-	.clock4	(subclock12_5),
+	.clock4	(subclock12_5)
 	);
 	
 	
@@ -356,26 +362,22 @@ SPIConverter rfmadc (
 	.Cs_f		(rfm_spi_CSEL_F)
 	);
 
-// Receive DDR data from the (only) receiver
+// Receive data from the (only) receiver
+// fanned out to 32 bit wide double word
 
-/* These should be declared inside Qsys.  Need to edit the instantiation...
-        .msgdma_rxm_st_sink_data                     (dmuxdata), 
-        .msgdma_rxm_st_sink_valid                    (<connected-to-msgdma_rxm_st_sink_valid>), 
-        .msgdma_rxm_st_sink_ready                    (<connected-to-msgdma_rxm_st_sink_ready>), 
-*/
-
-wire [64] dmuxdata;
+wire [31:0] dmuxdata;
 wire dmuxclk;
 wire dmuxvalid;
-wire sinkready;
-
-DDR_RXData rx0 (
-	.ch0		(dmuxdata),
-	.RxClk4	(dmuxclk),
-	.DDR_rx 	(DDRRXM),
-	.Clk		(RXMCLK)	
+wire fifoready;
+//
+RXData rx0 (
+	.ch1		(dmuxdata),  // receiver channel 0 dmux output
+	.RxClk2	(dmuxclk),	 // 61.44 MHz clock out
+	.RXMCH0_dat (DDRRXM), // 14 bit rx data + overrange from ADC
+	.Clk		(RXMCLK),	 // DC0A rx data clk from ADC
+	.Ready 	(fifoready), // FIFO is ready
+	.Valid 	(dmuxvalid)	 // Data to FIFO is Valid
 	);
-	
 	
 endmodule
 
