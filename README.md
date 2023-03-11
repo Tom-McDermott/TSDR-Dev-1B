@@ -1,4 +1,9 @@
-# Tangerine SDR Development Project
+# Tangerine SDR Development Project - Version for Test Plan 1B
+
+This code is being worked on to add functionality required for test plan Phase 1B.
+The purpose is to provide bursts of 16,384 time-contiguous words from the receiver,
+then gaps of empty time.  The receiver will send those samples, via UDP socket
+to gnuradio where they can be analyzed.
 
 ## This is a developer repository for the TangerineSDR FPGA and C code. This version is intended for the MAX10 Development Board, the TAPR DE_Adapter, Receiver Module, and Clock Module.
 
