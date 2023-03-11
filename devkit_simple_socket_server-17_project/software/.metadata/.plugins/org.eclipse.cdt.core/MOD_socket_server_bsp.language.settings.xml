@@ -3460,6 +3460,44 @@
 						<entry kind="macro" name="__hal__" value=""/>
 						<entry kind="macro" name="__ucosii__" value=""/>
 					</resource>
+					<resource project-relative-path="drivers/src/altera_avalon_fifo_util.c">
+						<entry kind="includePath" name="/${ProjName}/drivers/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/drivers/inc/iniche">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/iniche/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/iniche/src/h">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/iniche/src/h/nios2">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/iniche/src/nios2">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/UCOSII/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/HAL/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/${ProjName}/">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="macro" name="ALTERA_AUTONEG_TIMEOUT_THRESHOLD" value="2500"/>
+						<entry kind="macro" name="ALTERA_CHECKLINK_TIMEOUT_THRESHOLD" value="10000"/>
+						<entry kind="macro" name="ALTERA_NOMDIO_TIMEOUT_THRESHOLD" value="1000000"/>
+						<entry kind="macro" name="ALTERA_TRIPLE_SPEED_MAC" value=""/>
+						<entry kind="macro" name="ALT_INICHE" value=""/>
+						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
+						<entry kind="macro" name="TSE_MY_SYSTEM" value=""/>
+						<entry kind="macro" name="__hal__" value=""/>
+						<entry kind="macro" name="__ucosii__" value=""/>
+					</resource>
 					<resource project-relative-path="HAL/src/alt_open.c">
 						<entry kind="includePath" name="/${ProjName}/drivers/inc">
 							<flag value="VALUE_WORKSPACE_PATH"/>

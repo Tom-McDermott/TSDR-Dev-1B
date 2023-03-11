@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu' in SOPC Builder design 'q_sys'
 # SOPC Builder design path: ../../q_sys.sopcinfo
 #
-# Generated: Sat Feb 18 12:06:06 PST 2023
+# Generated: Fri Mar 10 16:34:35 PST 2023
 
 # DO NOT MODIFY THIS FILE
 #
@@ -53,4 +53,4 @@ memory 0x8000000 0x10000000 cache
 memory 0x14000000 0x18000000 cache
 
 # descriptor_memory
-memory 0x18002000 0x18004000 cache
+memory 0x18000000 0x18002000 cache

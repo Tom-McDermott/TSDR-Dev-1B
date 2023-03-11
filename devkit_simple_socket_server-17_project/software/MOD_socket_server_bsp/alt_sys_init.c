@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'q_sys'
  * SOPC Builder design path: ../../q_sys.sopcinfo
  *
- * Generated: Sat Feb 18 12:06:06 PST 2023
+ * Generated: Fri Mar 10 16:34:35 PST 2023
  */
 
 /*
@@ -59,6 +59,7 @@
  */
 
 #include "altera_nios2_gen2_irq.h"
+#include "altera_avalon_fifo.h"
 #include "altera_avalon_i2c.h"
 #include "altera_avalon_jtag_uart.h"
 #include "altera_avalon_spi.h"
@@ -73,6 +74,7 @@
  */
 
 ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( CPU, cpu);
+ALTERA_AVALON_FIFO_INSTANCE ( FIFO_0, fifo_0);
 ALTERA_AVALON_I2C_INSTANCE ( I2C_CKM_C0, i2c_ckm_c0);
 ALTERA_AVALON_I2C_INSTANCE ( I2C_CKM_ID, i2c_ckm_id);
 ALTERA_AVALON_I2C_INSTANCE ( I2C_RXM_CTRL, i2c_rxm_ctrl);
@@ -83,7 +85,6 @@ ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID, sysid);
 ALTERA_AVALON_TIMER_INSTANCE ( SYS_CLK_TIMER, sys_clk_timer);
 ALTERA_ETH_TSE_INSTANCE ( ETH_TSE, eth_tse);
 ALTERA_GENERIC_QUAD_SPI_CONTROLLER_AVL_MEM_AVL_CSR_INSTANCE ( EXT_FLASH, EXT_FLASH_AVL_MEM, EXT_FLASH_AVL_CSR, ext_flash);
-ALTERA_MSGDMA_CSR_DESCRIPTOR_SLAVE_INSTANCE ( MSGDMA_RXM, MSGDMA_RXM_CSR, MSGDMA_RXM_DESCRIPTOR_SLAVE, msgdma_RXM);
 ALTERA_MSGDMA_CSR_PREFETCHER_CSR_INSTANCE ( MSGDMA_RX, MSGDMA_RX_CSR, MSGDMA_RX_PREFETCHER_CSR, msgdma_rx);
 ALTERA_MSGDMA_CSR_PREFETCHER_CSR_INSTANCE ( MSGDMA_TX, MSGDMA_TX_CSR, MSGDMA_TX_PREFETCHER_CSR, msgdma_tx);
 
@@ -109,6 +110,7 @@ void alt_irq_init ( const void* base )
 void alt_sys_init( void )
 {
     ALTERA_AVALON_TIMER_INIT ( SYS_CLK_TIMER, sys_clk_timer);
+    ALTERA_AVALON_FIFO_INIT ( FIFO_0, fifo_0);
     ALTERA_AVALON_I2C_INIT ( I2C_CKM_C0, i2c_ckm_c0);
     ALTERA_AVALON_I2C_INIT ( I2C_CKM_ID, i2c_ckm_id);
     ALTERA_AVALON_I2C_INIT ( I2C_RXM_CTRL, i2c_rxm_ctrl);
@@ -119,6 +121,5 @@ void alt_sys_init( void )
     ALTERA_ETH_TSE_INIT ( ETH_TSE, eth_tse);
     ALTERA_GENERIC_QUAD_SPI_CONTROLLER_INIT ( EXT_FLASH, ext_flash);
     ALTERA_MSGDMA_INIT ( MSGDMA_RX, msgdma_rx);
-    ALTERA_MSGDMA_INIT ( MSGDMA_RXM, msgdma_RXM);
     ALTERA_MSGDMA_INIT ( MSGDMA_TX, msgdma_tx);
 }

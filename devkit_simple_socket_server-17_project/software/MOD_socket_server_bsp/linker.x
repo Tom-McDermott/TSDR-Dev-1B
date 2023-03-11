@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'q_sys'
  * SOPC Builder design path: ../../q_sys.sopcinfo
  *
- * Generated: Sat Feb 18 12:06:06 PST 2023
+ * Generated: Fri Mar 10 16:34:35 PST 2023
  */
 
 /*
@@ -55,13 +55,13 @@ MEMORY
     ext_flash_avl_mem_BEFORE_RESET : ORIGIN = 0x14000000, LENGTH = 4390912
     reset : ORIGIN = 0x14430000, LENGTH = 32
     ext_flash_avl_mem : ORIGIN = 0x14430020, LENGTH = 62717920
-    descriptor_memory : ORIGIN = 0x18002000, LENGTH = 8192
+    descriptor_memory : ORIGIN = 0x18000000, LENGTH = 8192
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_mem_if_ddr3_emif_0 = 0x8000000;
 __alt_mem_ext_flash_avl_mem = 0x14000000;
-__alt_mem_descriptor_memory = 0x18002000;
+__alt_mem_descriptor_memory = 0x18000000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",

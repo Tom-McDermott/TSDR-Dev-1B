@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Feb 18, 2023 12:06:05 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1676750765495</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 10, 2023 4:34:34 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1678494874500</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/tom/TSDR-Dev-1B/devkit_simple_socket_server-17_project/software/MOD_socket_server_bsp</BspGeneratedLocation>
         <BspSettingsFile>/home/tom/TSDR-Dev-1B/devkit_simple_socket_server-17_project/software/MOD_socket_server_bsp/settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../q_sys.sopcinfo</SopcDesignFile>
@@ -1847,9 +1847,9 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>msgdma_RXM_descriptor_slave</slaveDescriptor>
-                <addressRange>0x00000000 - 0x0000000F</addressRange>
-                <addressSpan>16</addressSpan>
+                <slaveDescriptor>fifo_0_out_csr</slaveDescriptor>
+                <addressRange>0x00000000 - 0x0000001F</addressRange>
+                <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
@@ -1866,109 +1866,109 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>descriptor_memory</slaveDescriptor>
-                <addressRange>0x18002000 - 0x18003FFF</addressRange>
+                <addressRange>0x18000000 - 0x18001FFF</addressRange>
                 <addressSpan>8192</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>eth_tse</slaveDescriptor>
-                <addressRange>0x18005000 - 0x180053FF</addressRange>
+                <addressRange>0x18003000 - 0x180033FF</addressRange>
                 <addressSpan>1024</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>i2c_ckm_c0</slaveDescriptor>
-                <addressRange>0x18005500 - 0x1800553F</addressRange>
+                <addressRange>0x18003500 - 0x1800353F</addressRange>
                 <addressSpan>64</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>i2c_ckm_id</slaveDescriptor>
-                <addressRange>0x18005540 - 0x1800557F</addressRange>
+                <addressRange>0x18003540 - 0x1800357F</addressRange>
                 <addressSpan>64</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>i2c_rxm_ctrl</slaveDescriptor>
-                <addressRange>0x18005580 - 0x180055BF</addressRange>
+                <addressRange>0x18003580 - 0x180035BF</addressRange>
                 <addressSpan>64</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>i2c_rxm_id</slaveDescriptor>
-                <addressRange>0x180055C0 - 0x180055FF</addressRange>
+                <addressRange>0x180035C0 - 0x180035FF</addressRange>
                 <addressSpan>64</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>msgdma_RXM_csr</slaveDescriptor>
-                <addressRange>0x18005680 - 0x1800569F</addressRange>
-                <addressSpan>32</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>spi_rxm</slaveDescriptor>
-                <addressRange>0x180056A0 - 0x180056BF</addressRange>
+                <addressRange>0x18003680 - 0x1800369F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sys_clk_timer</slaveDescriptor>
-                <addressRange>0x180056C0 - 0x180056DF</addressRange>
+                <addressRange>0x180036A0 - 0x180036BF</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_rx_prefetcher_csr</slaveDescriptor>
-                <addressRange>0x180056E0 - 0x180056FF</addressRange>
+                <addressRange>0x180036C0 - 0x180036DF</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_tx_prefetcher_csr</slaveDescriptor>
-                <addressRange>0x18005700 - 0x1800571F</addressRange>
+                <addressRange>0x180036E0 - 0x180036FF</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_rx_csr</slaveDescriptor>
-                <addressRange>0x18005720 - 0x1800573F</addressRange>
+                <addressRange>0x18003700 - 0x1800371F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>msgdma_tx_csr</slaveDescriptor>
-                <addressRange>0x18005740 - 0x1800575F</addressRange>
+                <addressRange>0x18003720 - 0x1800373F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>ext_flash_avl_csr</slaveDescriptor>
-                <addressRange>0x18005760 - 0x1800577F</addressRange>
+                <addressRange>0x18003740 - 0x1800375F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>dual_boot_0</slaveDescriptor>
-                <addressRange>0x18005780 - 0x1800579F</addressRange>
+                <addressRange>0x18003760 - 0x1800377F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>led_pio</slaveDescriptor>
-                <addressRange>0x180057A0 - 0x180057AF</addressRange>
+                <addressRange>0x18003780 - 0x1800378F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>fifo_0_out</slaveDescriptor>
+                <addressRange>0x18003790 - 0x18003797</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x180057B0 - 0x180057B7</addressRange>
+                <addressRange>0x18003798 - 0x1800379F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x180057B8 - 0x180057BF</addressRange>
+                <addressRange>0x180037A0 - 0x180037A7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

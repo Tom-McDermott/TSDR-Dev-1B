@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'q_sys'
  * SOPC Builder design path: ../../q_sys.sopcinfo
  *
- * Generated: Sat Feb 18 12:06:06 PST 2023
+ * Generated: Fri Mar 10 16:34:35 PST 2023
  */
 
 /*
@@ -65,7 +65,7 @@
  *
  */
 
-#define DESCRIPTOR_MEMORY_REGION_BASE 0x18002000
+#define DESCRIPTOR_MEMORY_REGION_BASE 0x18000000
 #define DESCRIPTOR_MEMORY_REGION_SPAN 8192
 #define EXT_FLASH_AVL_MEM_BEFORE_RESET_REGION_BASE 0x14000000
 #define EXT_FLASH_AVL_MEM_BEFORE_RESET_REGION_SPAN 4390912
