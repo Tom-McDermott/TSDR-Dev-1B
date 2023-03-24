@@ -13,7 +13,7 @@
    {
       datum _sortIndex
       {
-         value = "18";
+         value = "20";
          type = "int";
       }
    }
@@ -29,7 +29,7 @@
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "7";
          type = "int";
       }
    }
@@ -58,7 +58,7 @@
    {
       datum _sortIndex
       {
-         value = "15";
+         value = "17";
          type = "int";
       }
       datum sopceditor_expanded
@@ -79,7 +79,7 @@
    {
       datum _sortIndex
       {
-         value = "19";
+         value = "21";
          type = "int";
       }
    }
@@ -95,7 +95,7 @@
    {
       datum _sortIndex
       {
-         value = "17";
+         value = "19";
          type = "int";
       }
    }
@@ -103,7 +103,7 @@
    {
       datum _sortIndex
       {
-         value = "16";
+         value = "18";
          type = "int";
       }
       datum sopceditor_expanded
@@ -156,7 +156,15 @@
    {
       datum baseAddress
       {
-         value = "402667408";
+         value = "402667424";
+         type = "String";
+      }
+   }
+   element fifo_0.out_csr
+   {
+      datum baseAddress
+      {
+         value = "402667232";
          type = "String";
       }
    }
@@ -164,7 +172,7 @@
    {
       datum _sortIndex
       {
-         value = "23";
+         value = "25";
          type = "int";
       }
    }
@@ -180,7 +188,7 @@
    {
       datum _sortIndex
       {
-         value = "22";
+         value = "24";
          type = "int";
       }
    }
@@ -196,7 +204,7 @@
    {
       datum _sortIndex
       {
-         value = "21";
+         value = "23";
          type = "int";
       }
    }
@@ -212,7 +220,7 @@
    {
       datum _sortIndex
       {
-         value = "20";
+         value = "22";
          type = "int";
       }
    }
@@ -228,7 +236,7 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "13";
          type = "int";
       }
       datum sopceditor_expanded
@@ -241,7 +249,7 @@
    {
       datum baseAddress
       {
-         value = "402667424";
+         value = "402667440";
          type = "String";
       }
    }
@@ -249,7 +257,7 @@
    {
       datum _sortIndex
       {
-         value = "12";
+         value = "14";
          type = "int";
       }
    }
@@ -257,7 +265,7 @@
    {
       datum baseAddress
       {
-         value = "402667392";
+         value = "402667408";
          type = "String";
       }
    }
@@ -265,7 +273,7 @@
    {
       datum _sortIndex
       {
-         value = "7";
+         value = "9";
          type = "int";
       }
    }
@@ -281,7 +289,7 @@
    {
       datum _sortIndex
       {
-         value = "6";
+         value = "8";
          type = "int";
       }
    }
@@ -289,7 +297,7 @@
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "10";
          type = "int";
       }
       datum sopceditor_expanded
@@ -302,7 +310,7 @@
    {
       datum _sortIndex
       {
-         value = "14";
+         value = "16";
          type = "int";
       }
    }
@@ -318,7 +326,7 @@
    {
       datum baseAddress
       {
-         value = "402667200";
+         value = "402667168";
          type = "String";
       }
    }
@@ -326,7 +334,7 @@
    {
       datum _sortIndex
       {
-         value = "13";
+         value = "15";
          type = "int";
       }
    }
@@ -342,15 +350,39 @@
    {
       datum baseAddress
       {
-         value = "402667232";
+         value = "402667200";
          type = "String";
+      }
+   }
+   element pio_fifo
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element pio_fifo.s1
+   {
+      datum baseAddress
+      {
+         value = "402667392";
+         type = "String";
+      }
+   }
+   element reset_bridge_fifo
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
       }
    }
    element spi_rxm
    {
       datum _sortIndex
       {
-         value = "24";
+         value = "26";
          type = "int";
       }
    }
@@ -358,7 +390,7 @@
    {
       datum baseAddress
       {
-         value = "402667136";
+         value = "402667104";
          type = "String";
       }
    }
@@ -379,7 +411,7 @@
    {
       datum _sortIndex
       {
-         value = "9";
+         value = "11";
          type = "int";
       }
       datum sopceditor_expanded
@@ -392,7 +424,7 @@
    {
       datum baseAddress
       {
-         value = "402667168";
+         value = "402667136";
          type = "String";
       }
    }
@@ -400,7 +432,7 @@
    {
       datum _sortIndex
       {
-         value = "10";
+         value = "12";
          type = "int";
       }
       datum sopceditor_expanded
@@ -421,7 +453,7 @@
    {
       datum baseAddress
       {
-         value = "402667416";
+         value = "402667432";
          type = "String";
       }
    }
@@ -572,8 +604,18 @@
    internal="mem_if_ddr3_emif_0.memory"
    type="conduit"
    dir="end" />
+ <interface
+   name="pio_fifo_external_connection"
+   internal="pio_fifo.external_connection"
+   type="conduit"
+   dir="end" />
  <interface name="ref_clk_clk_in" internal=".clk_in" />
  <interface name="reset" internal="sys_clk.clk_in_reset" type="reset" dir="end" />
+ <interface
+   name="reset_bridge_fifo_in_reset"
+   internal="reset_bridge_fifo.in_reset"
+   type="reset"
+   dir="end" />
  <interface
    name="spi_rxm_external"
    internal="spi_rxm.external"
@@ -766,8 +808,8 @@
   <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
  </module>
  <module name="cpu" kind="altera_nios2_gen2" version="20.1" enabled="1">
-  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="13" />
-  <parameter name="AUTO_CLK_RESET_DOMAIN" value="13" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="14" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="14" />
   <parameter name="AUTO_DEVICE" value="10M50DAF484C6GES" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
   <parameter name="bht_ramBlockType" value="Automatic" />
@@ -785,7 +827,7 @@
   <parameter name="dataAddrWidth" value="29" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='fifo_0.out_csr' start='0x0' end='0x20' type='altera_avalon_fifo.out_csr' /><slave name='mem_if_ddr3_emif_0.avl' start='0x8000000' end='0x10000000' type='altera_mem_if_ddr3_emif.avl' /><slave name='ext_flash.avl_mem' start='0x14000000' end='0x18000000' type='altera_generic_quad_spi_controller.avl_mem' /><slave name='descriptor_memory.s1' start='0x18000000' end='0x18002000' type='altera_avalon_onchip_memory2.s1' /><slave name='cpu.debug_mem_slave' start='0x18002800' end='0x18003000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='eth_tse.control_port' start='0x18003000' end='0x18003400' type='altera_eth_tse.control_port' /><slave name='i2c_ckm_c0.csr' start='0x18003500' end='0x18003540' type='altera_avalon_i2c.csr' /><slave name='i2c_ckm_id.csr' start='0x18003540' end='0x18003580' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_ctrl.csr' start='0x18003580' end='0x180035C0' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_id.csr' start='0x180035C0' end='0x18003600' type='altera_avalon_i2c.csr' /><slave name='spi_rxm.spi_control_port' start='0x18003680' end='0x180036A0' type='altera_avalon_spi.spi_control_port' /><slave name='sys_clk_timer.s1' start='0x180036A0' end='0x180036C0' type='altera_avalon_timer.s1' /><slave name='msgdma_rx.prefetcher_csr' start='0x180036C0' end='0x180036E0' type='altera_msgdma.prefetcher_csr' /><slave name='msgdma_tx.prefetcher_csr' start='0x180036E0' end='0x18003700' type='altera_msgdma.prefetcher_csr' /><slave name='msgdma_rx.csr' start='0x18003700' end='0x18003720' type='altera_msgdma.csr' /><slave name='msgdma_tx.csr' start='0x18003720' end='0x18003740' type='altera_msgdma.csr' /><slave name='ext_flash.avl_csr' start='0x18003740' end='0x18003760' type='altera_generic_quad_spi_controller.avl_csr' /><slave name='dual_boot_0.avalon' start='0x18003760' end='0x18003780' type='altera_dual_boot.avalon' /><slave name='led_pio.s1' start='0x18003780' end='0x18003790' type='altera_avalon_pio.s1' /><slave name='fifo_0.out' start='0x18003790' end='0x18003798' type='altera_avalon_fifo.out' /><slave name='sysid.control_slave' start='0x18003798' end='0x180037A0' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart.avalon_jtag_slave' start='0x180037A0' end='0x180037A8' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='mem_if_ddr3_emif_0.avl' start='0x8000000' end='0x10000000' type='altera_mem_if_ddr3_emif.avl' /><slave name='ext_flash.avl_mem' start='0x14000000' end='0x18000000' type='altera_generic_quad_spi_controller.avl_mem' /><slave name='descriptor_memory.s1' start='0x18000000' end='0x18002000' type='altera_avalon_onchip_memory2.s1' /><slave name='cpu.debug_mem_slave' start='0x18002800' end='0x18003000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='eth_tse.control_port' start='0x18003000' end='0x18003400' type='altera_eth_tse.control_port' /><slave name='i2c_ckm_c0.csr' start='0x18003500' end='0x18003540' type='altera_avalon_i2c.csr' /><slave name='i2c_ckm_id.csr' start='0x18003540' end='0x18003580' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_ctrl.csr' start='0x18003580' end='0x180035C0' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_id.csr' start='0x180035C0' end='0x18003600' type='altera_avalon_i2c.csr' /><slave name='spi_rxm.spi_control_port' start='0x18003660' end='0x18003680' type='altera_avalon_spi.spi_control_port' /><slave name='sys_clk_timer.s1' start='0x18003680' end='0x180036A0' type='altera_avalon_timer.s1' /><slave name='msgdma_rx.prefetcher_csr' start='0x180036A0' end='0x180036C0' type='altera_msgdma.prefetcher_csr' /><slave name='msgdma_tx.prefetcher_csr' start='0x180036C0' end='0x180036E0' type='altera_msgdma.prefetcher_csr' /><slave name='fifo_0.out_csr' start='0x180036E0' end='0x18003700' type='altera_avalon_fifo.out_csr' /><slave name='msgdma_rx.csr' start='0x18003700' end='0x18003720' type='altera_msgdma.csr' /><slave name='msgdma_tx.csr' start='0x18003720' end='0x18003740' type='altera_msgdma.csr' /><slave name='ext_flash.avl_csr' start='0x18003740' end='0x18003760' type='altera_generic_quad_spi_controller.avl_csr' /><slave name='dual_boot_0.avalon' start='0x18003760' end='0x18003780' type='altera_dual_boot.avalon' /><slave name='pio_fifo.s1' start='0x18003780' end='0x18003790' type='altera_avalon_pio.s1' /><slave name='led_pio.s1' start='0x18003790' end='0x180037A0' type='altera_avalon_pio.s1' /><slave name='fifo_0.out' start='0x180037A0' end='0x180037A8' type='altera_avalon_fifo.out' /><slave name='sysid.control_slave' start='0x180037A8' end='0x180037B0' type='altera_avalon_sysid_qsys.control_slave' /><slave name='jtag_uart.avalon_jtag_slave' start='0x180037B0' end='0x180037B8' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -824,7 +866,7 @@
   <parameter name="icache_tagramBlockType" value="Automatic" />
   <parameter name="impl" value="Fast" />
   <parameter name="instAddrWidth" value="29" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='mem_if_ddr3_emif_0.avl' start='0x8000000' end='0x10000000' type='altera_mem_if_ddr3_emif.avl' /><slave name='ext_flash.avl_mem' start='0x14000000' end='0x18000000' type='altera_generic_quad_spi_controller.avl_mem' /><slave name='cpu.debug_mem_slave' start='0x18002800' end='0x18003000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='i2c_ckm_c0.csr' start='0x18003500' end='0x18003540' type='altera_avalon_i2c.csr' /><slave name='i2c_ckm_id.csr' start='0x18003540' end='0x18003580' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_ctrl.csr' start='0x18003580' end='0x180035C0' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_id.csr' start='0x180035C0' end='0x18003600' type='altera_avalon_i2c.csr' /><slave name='spi_rxm.spi_control_port' start='0x18003680' end='0x180036A0' type='altera_avalon_spi.spi_control_port' /><slave name='ext_flash.avl_csr' start='0x18003740' end='0x18003760' type='altera_generic_quad_spi_controller.avl_csr' /><slave name='dual_boot_0.avalon' start='0x18003760' end='0x18003780' type='altera_dual_boot.avalon' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='mem_if_ddr3_emif_0.avl' start='0x8000000' end='0x10000000' type='altera_mem_if_ddr3_emif.avl' /><slave name='ext_flash.avl_mem' start='0x14000000' end='0x18000000' type='altera_generic_quad_spi_controller.avl_mem' /><slave name='cpu.debug_mem_slave' start='0x18002800' end='0x18003000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='i2c_ckm_c0.csr' start='0x18003500' end='0x18003540' type='altera_avalon_i2c.csr' /><slave name='i2c_ckm_id.csr' start='0x18003540' end='0x18003580' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_ctrl.csr' start='0x18003580' end='0x180035C0' type='altera_avalon_i2c.csr' /><slave name='i2c_rxm_id.csr' start='0x180035C0' end='0x18003600' type='altera_avalon_i2c.csr' /><slave name='spi_rxm.spi_control_port' start='0x18003660' end='0x18003680' type='altera_avalon_spi.spi_control_port' /><slave name='ext_flash.avl_csr' start='0x18003740' end='0x18003760' type='altera_generic_quad_spi_controller.avl_csr' /><slave name='dual_boot_0.avalon' start='0x18003760' end='0x18003780' type='altera_dual_boot.avalon' /></address-map>]]></parameter>
   <parameter name="instructionMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="instructionMasterHighPerformanceMapParam" value="" />
   <parameter name="instruction_master_high_performance_paddr_base" value="0" />
@@ -1720,6 +1762,31 @@
   <parameter name="TRANSFER_TYPE" value="Aligned Accesses" />
   <parameter name="USE_FIX_ADDRESS_WIDTH" value="0" />
  </module>
+ <module name="pio_fifo" kind="altera_avalon_pio" version="20.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="1" />
+ </module>
+ <module
+   name="reset_bridge_fifo"
+   kind="altera_reset_bridge"
+   version="20.1"
+   enabled="1">
+  <parameter name="ACTIVE_LOW_RESET" value="0" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+  <parameter name="NUM_RESET_OUTPUTS" value="1" />
+  <parameter name="SYNCHRONOUS_EDGES" value="deassert" />
+  <parameter name="USE_RESET_REQUEST" value="0" />
+ </module>
  <module name="spi_rxm" kind="altera_avalon_spi" version="20.1" enabled="1">
   <parameter name="avalonSpec" value="2.0" />
   <parameter name="clockPhase" value="0" />
@@ -1780,7 +1847,7 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x180037a0" />
+  <parameter name="baseAddress" value="0x180037b0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1825,7 +1892,7 @@
    start="cpu.data_master"
    end="sysid.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x18003798" />
+  <parameter name="baseAddress" value="0x180037a8" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1893,7 +1960,7 @@
  </connection>
  <connection kind="avalon" version="20.1" start="cpu.data_master" end="fifo_0.out">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x18003790" />
+  <parameter name="baseAddress" value="0x180037a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1902,7 +1969,7 @@
    start="cpu.data_master"
    end="fifo_0.out_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="baseAddress" value="0x180036e0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1911,7 +1978,7 @@
    start="cpu.data_master"
    end="msgdma_tx.prefetcher_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x180036e0" />
+  <parameter name="baseAddress" value="0x180036c0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1920,7 +1987,7 @@
    start="cpu.data_master"
    end="msgdma_rx.prefetcher_csr">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x180036c0" />
+  <parameter name="baseAddress" value="0x180036a0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -1947,10 +2014,19 @@
    start="cpu.data_master"
    end="sys_clk_timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x180036a0" />
+  <parameter name="baseAddress" value="0x18003680" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection kind="avalon" version="20.1" start="cpu.data_master" end="led_pio.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x18003790" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="20.1"
+   start="cpu.data_master"
+   end="pio_fifo.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x18003780" />
   <parameter name="defaultConnection" value="false" />
@@ -1961,7 +2037,7 @@
    start="cpu.data_master"
    end="spi_rxm.spi_control_port">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x18003680" />
+  <parameter name="baseAddress" value="0x18003660" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2096,7 +2172,7 @@
    start="cpu.instruction_master"
    end="spi_rxm.spi_control_port">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x18003680" />
+  <parameter name="baseAddress" value="0x18003660" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -2152,6 +2228,12 @@
  <connection kind="clock" version="20.1" start="sys_clk.clk" end="led_pio.clk" />
  <connection kind="clock" version="20.1" start="sys_clk.clk" end="dual_boot_0.clk" />
  <connection kind="clock" version="20.1" start="sys_clk.clk" end="spi_rxm.clk" />
+ <connection kind="clock" version="20.1" start="sys_clk.clk" end="pio_fifo.clk" />
+ <connection
+   kind="clock"
+   version="20.1"
+   start="sys_clk.clk"
+   end="reset_bridge_fifo.clk" />
  <connection
    kind="clock"
    version="20.1"
@@ -2301,6 +2383,11 @@
    kind="reset"
    version="20.1"
    start="sys_clk.clk_reset"
+   end="pio_fifo.reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="sys_clk.clk_reset"
    end="descriptor_memory.reset1" />
  <connection
    kind="reset"
@@ -2311,22 +2398,12 @@
    kind="reset"
    version="20.1"
    start="sys_clk.clk_reset"
-   end="fifo_0.reset_in" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="sys_clk.clk_reset"
    end="msgdma_tx.reset_n" />
  <connection
    kind="reset"
    version="20.1"
    start="sys_clk.clk_reset"
    end="msgdma_rx.reset_n" />
- <connection
-   kind="reset"
-   version="20.1"
-   start="sys_clk.clk_reset"
-   end="fifo_0.reset_out" />
  <connection
    kind="reset"
    version="20.1"
@@ -2412,6 +2489,16 @@
    version="20.1"
    start="mem_resetn.out_reset"
    end="enet_pll.inclk_interface_reset" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="reset_bridge_fifo.out_reset"
+   end="fifo_0.reset_in" />
+ <connection
+   kind="reset"
+   version="20.1"
+   start="reset_bridge_fifo.out_reset"
+   end="fifo_0.reset_out" />
  <connection
    kind="reset"
    version="20.1"

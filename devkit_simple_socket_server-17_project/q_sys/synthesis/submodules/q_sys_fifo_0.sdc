@@ -10,6 +10,11 @@
 # Intel or its authorized distributors.  Please refer to the applicable 
 # agreement for further details.
 
+#post_message -type info "*********************************"
+#post_message -type info "Reading file: \'qsys_fifo_0.sdc\'"
+#post_message -type info "*********************************"
+
+
 
 # constraints for Altera Avalon FIFO sdc
 #
@@ -34,6 +39,8 @@ set_net_delay -from $from_node_list -to $to_node_list -max -get_value_from_clock
 set_max_delay -from $from_node_list -to $to_node_list 100
 set_min_delay -from $from_node_list -to $to_node_list -100
 }
+
+
 #
 # mstable propgation delay
 #

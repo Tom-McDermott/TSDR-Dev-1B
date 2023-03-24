@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'q_sys'
  * SOPC Builder design path: ../../q_sys.sopcinfo
  *
- * Generated: Fri Mar 10 16:34:35 PST 2023
+ * Generated: Fri Mar 24 09:05:49 PDT 2023
  */
 
 /*
@@ -169,19 +169,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x180037a0
+#define ALT_STDERR_BASE 0x180037b0
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x180037a0
+#define ALT_STDIN_BASE 0x180037b0
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x180037a0
+#define ALT_STDOUT_BASE 0x180037b0
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -320,7 +320,7 @@
 #define ALT_MODULE_CLASS_fifo_0_out altera_avalon_fifo
 #define FIFO_0_OUT_AVALONMM_AVALONMM_DATA_WIDTH 32
 #define FIFO_0_OUT_AVALONMM_AVALONST_DATA_WIDTH 32
-#define FIFO_0_OUT_BASE 0x18003790
+#define FIFO_0_OUT_BASE 0x180037a0
 #define FIFO_0_OUT_BITS_PER_SYMBOL 32
 #define FIFO_0_OUT_CHANNEL_WIDTH 0
 #define FIFO_0_OUT_ERROR_WIDTH 0
@@ -352,7 +352,7 @@
 #define ALT_MODULE_CLASS_fifo_0_out_csr altera_avalon_fifo
 #define FIFO_0_OUT_CSR_AVALONMM_AVALONMM_DATA_WIDTH 32
 #define FIFO_0_OUT_CSR_AVALONMM_AVALONST_DATA_WIDTH 32
-#define FIFO_0_OUT_CSR_BASE 0x0
+#define FIFO_0_OUT_CSR_BASE 0x180036e0
 #define FIFO_0_OUT_CSR_BITS_PER_SYMBOL 32
 #define FIFO_0_OUT_CSR_CHANNEL_WIDTH 0
 #define FIFO_0_OUT_CSR_ERROR_WIDTH 0
@@ -461,7 +461,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x180037a0
+#define JTAG_UART_BASE 0x180037b0
 #define JTAG_UART_IRQ 3
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -479,7 +479,7 @@
  */
 
 #define ALT_MODULE_CLASS_led_pio altera_avalon_pio
-#define LED_PIO_BASE 0x18003780
+#define LED_PIO_BASE 0x18003790
 #define LED_PIO_BIT_CLEARING_EDGE_REGISTER 0
 #define LED_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LED_PIO_CAPTURE 0
@@ -558,7 +558,7 @@
  */
 
 #define ALT_MODULE_CLASS_msgdma_rx_prefetcher_csr altera_msgdma
-#define MSGDMA_RX_PREFETCHER_CSR_BASE 0x180036c0
+#define MSGDMA_RX_PREFETCHER_CSR_BASE 0x180036a0
 #define MSGDMA_RX_PREFETCHER_CSR_BURST_ENABLE 0
 #define MSGDMA_RX_PREFETCHER_CSR_BURST_WRAPPING_SUPPORT 0
 #define MSGDMA_RX_PREFETCHER_CSR_CHANNEL_ENABLE 0
@@ -634,7 +634,7 @@
  */
 
 #define ALT_MODULE_CLASS_msgdma_tx_prefetcher_csr altera_msgdma
-#define MSGDMA_TX_PREFETCHER_CSR_BASE 0x180036e0
+#define MSGDMA_TX_PREFETCHER_CSR_BASE 0x180036c0
 #define MSGDMA_TX_PREFETCHER_CSR_BURST_ENABLE 0
 #define MSGDMA_TX_PREFETCHER_CSR_BURST_WRAPPING_SUPPORT 0
 #define MSGDMA_TX_PREFETCHER_CSR_CHANNEL_ENABLE 0
@@ -667,12 +667,39 @@
 
 
 /*
+ * pio_fifo configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pio_fifo altera_avalon_pio
+#define PIO_FIFO_BASE 0x18003780
+#define PIO_FIFO_BIT_CLEARING_EDGE_REGISTER 0
+#define PIO_FIFO_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define PIO_FIFO_CAPTURE 0
+#define PIO_FIFO_DATA_WIDTH 1
+#define PIO_FIFO_DO_TEST_BENCH_WIRING 0
+#define PIO_FIFO_DRIVEN_SIM_VALUE 0
+#define PIO_FIFO_EDGE_TYPE "NONE"
+#define PIO_FIFO_FREQ 50000000
+#define PIO_FIFO_HAS_IN 0
+#define PIO_FIFO_HAS_OUT 1
+#define PIO_FIFO_HAS_TRI 0
+#define PIO_FIFO_IRQ -1
+#define PIO_FIFO_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PIO_FIFO_IRQ_TYPE "NONE"
+#define PIO_FIFO_NAME "/dev/pio_fifo"
+#define PIO_FIFO_RESET_VALUE 0
+#define PIO_FIFO_SPAN 16
+#define PIO_FIFO_TYPE "altera_avalon_pio"
+
+
+/*
  * spi_rxm configuration
  *
  */
 
 #define ALT_MODULE_CLASS_spi_rxm altera_avalon_spi
-#define SPI_RXM_BASE 0x18003680
+#define SPI_RXM_BASE 0x18003660
 #define SPI_RXM_CLOCKMULT 1
 #define SPI_RXM_CLOCKPHASE 0
 #define SPI_RXM_CLOCKPOLARITY 0
@@ -704,7 +731,7 @@
 
 #define ALT_MODULE_CLASS_sys_clk_timer altera_avalon_timer
 #define SYS_CLK_TIMER_ALWAYS_RUN 0
-#define SYS_CLK_TIMER_BASE 0x180036a0
+#define SYS_CLK_TIMER_BASE 0x18003680
 #define SYS_CLK_TIMER_COUNTER_SIZE 32
 #define SYS_CLK_TIMER_FIXED_PERIOD 0
 #define SYS_CLK_TIMER_FREQ 50000000
@@ -729,13 +756,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid altera_avalon_sysid_qsys
-#define SYSID_BASE 0x18003798
+#define SYSID_BASE 0x180037a8
 #define SYSID_ID -87110914
 #define SYSID_IRQ -1
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1678390906
+#define SYSID_TIMESTAMP 1678735600
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 

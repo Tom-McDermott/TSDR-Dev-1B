@@ -70,7 +70,9 @@ module q_sys (
 		inout  wire [0:0]  memory_mem_dqs,                              //                                    .mem_dqs
 		inout  wire [0:0]  memory_mem_dqs_n,                            //                                    .mem_dqs_n
 		output wire [0:0]  memory_mem_odt,                              //                                    .mem_odt
+		output wire        pio_fifo_external_connection_export,         //        pio_fifo_external_connection.export
 		input  wire        reset_reset_n,                               //                               reset.reset_n
+		input  wire        reset_bridge_fifo_in_reset_reset,            //          reset_bridge_fifo_in_reset.reset
 		input  wire        spi_rxm_external_MISO,                       //                    spi_rxm_external.MISO
 		output wire        spi_rxm_external_MOSI,                       //                                    .MOSI
 		output wire        spi_rxm_external_SCLK,                       //                                    .SCLK
@@ -248,6 +250,11 @@ module q_sys (
 	wire   [1:0] mm_interconnect_0_led_pio_s1_address;                        // mm_interconnect_0:led_pio_s1_address -> led_pio:address
 	wire         mm_interconnect_0_led_pio_s1_write;                          // mm_interconnect_0:led_pio_s1_write -> led_pio:write_n
 	wire  [31:0] mm_interconnect_0_led_pio_s1_writedata;                      // mm_interconnect_0:led_pio_s1_writedata -> led_pio:writedata
+	wire         mm_interconnect_0_pio_fifo_s1_chipselect;                    // mm_interconnect_0:pio_fifo_s1_chipselect -> pio_fifo:chipselect
+	wire  [31:0] mm_interconnect_0_pio_fifo_s1_readdata;                      // pio_fifo:readdata -> mm_interconnect_0:pio_fifo_s1_readdata
+	wire   [1:0] mm_interconnect_0_pio_fifo_s1_address;                       // mm_interconnect_0:pio_fifo_s1_address -> pio_fifo:address
+	wire         mm_interconnect_0_pio_fifo_s1_write;                         // mm_interconnect_0:pio_fifo_s1_write -> pio_fifo:write_n
+	wire  [31:0] mm_interconnect_0_pio_fifo_s1_writedata;                     // mm_interconnect_0:pio_fifo_s1_writedata -> pio_fifo:writedata
 	wire         mm_interconnect_0_spi_rxm_spi_control_port_chipselect;       // mm_interconnect_0:spi_rxm_spi_control_port_chipselect -> spi_rxm:spi_select
 	wire  [15:0] mm_interconnect_0_spi_rxm_spi_control_port_readdata;         // spi_rxm:data_to_cpu -> mm_interconnect_0:spi_rxm_spi_control_port_readdata
 	wire   [2:0] mm_interconnect_0_spi_rxm_spi_control_port_address;          // mm_interconnect_0:spi_rxm_spi_control_port_address -> spi_rxm:mem_addr
@@ -290,7 +297,7 @@ module q_sys (
 	wire   [0:0] avalon_st_adapter_001_out_0_error;                           // avalon_st_adapter_001:out_0_error -> eth_tse:ff_tx_err
 	wire   [1:0] avalon_st_adapter_001_out_0_empty;                           // avalon_st_adapter_001:out_0_empty -> eth_tse:ff_tx_mod
 	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [altpll_shift:reset, enet_pll:reset]
-	wire         rst_controller_001_reset_out_reset;                          // rst_controller_001:reset_out -> [avalon_st_adapter_001:in_rst_0_reset, cpu:reset_n, dual_boot_0:nreset, fifo_0:rdreset_n, i2c_ckm_c0:rst_n, i2c_ckm_id:rst_n, i2c_rxm_ctrl:rst_n, i2c_rxm_id:rst_n, irq_mapper:reset, irq_synchronizer:sender_reset, mm_interconnect_0:cpu_reset_reset_bridge_in_reset_reset, msgdma_rx:reset_n_reset_n, msgdma_tx:reset_n_reset_n, rst_translator:in_reset, spi_rxm:reset_n]
+	wire         rst_controller_001_reset_out_reset;                          // rst_controller_001:reset_out -> [avalon_st_adapter_001:in_rst_0_reset, cpu:reset_n, dual_boot_0:nreset, i2c_ckm_c0:rst_n, i2c_ckm_id:rst_n, i2c_rxm_ctrl:rst_n, i2c_rxm_id:rst_n, irq_mapper:reset, irq_synchronizer:sender_reset, mm_interconnect_0:cpu_reset_reset_bridge_in_reset_reset, msgdma_rx:reset_n_reset_n, msgdma_tx:reset_n_reset_n, pio_fifo:reset_n, rst_translator:in_reset, spi_rxm:reset_n]
 	wire         rst_controller_001_reset_out_reset_req;                      // rst_controller_001:reset_req -> [cpu:reset_req, rst_translator:reset_req_in]
 	wire         rst_controller_002_reset_out_reset;                          // rst_controller_002:reset_out -> [avalon_st_adapter:in_rst_0_reset, descriptor_memory:reset, eth_tse:reset, jtag_uart:rst_n, led_pio:reset_n, mm_interconnect_0:jtag_uart_reset_reset_bridge_in_reset_reset, rst_translator_001:in_reset, sys_clk_timer:reset_n, sysid:reset_n]
 	wire         rst_controller_002_reset_out_reset_req;                      // rst_controller_002:reset_req -> [descriptor_memory:reset_req, rst_translator_001:reset_req_in]
@@ -503,7 +510,7 @@ module q_sys (
 		.wrclock                         (clock_bridge_1_in_clk_clk),                  //    clk_in.clk
 		.wrreset_n                       (~rst_controller_004_reset_out_reset),        //  reset_in.reset_n
 		.rdclock                         (sys_clk_clk),                                //   clk_out.clk
-		.rdreset_n                       (~rst_controller_001_reset_out_reset),        // reset_out.reset_n
+		.rdreset_n                       (~reset_bridge_fifo_in_reset_reset),          // reset_out.reset_n
 		.avalonst_sink_valid             (fifo_0_in_valid),                            //        in.valid
 		.avalonst_sink_data              (fifo_0_in_data),                             //          .data
 		.avalonst_sink_ready             (fifo_0_in_ready),                            //          .ready
@@ -769,6 +776,17 @@ module q_sys (
 		.st_source_error                            (msgdma_tx_st_source_error)                             //                        .error
 	);
 
+	q_sys_pio_fifo pio_fifo (
+		.clk        (sys_clk_clk),                              //                 clk.clk
+		.reset_n    (~rst_controller_001_reset_out_reset),      //               reset.reset_n
+		.address    (mm_interconnect_0_pio_fifo_s1_address),    //                  s1.address
+		.write_n    (~mm_interconnect_0_pio_fifo_s1_write),     //                    .write_n
+		.writedata  (mm_interconnect_0_pio_fifo_s1_writedata),  //                    .writedata
+		.chipselect (mm_interconnect_0_pio_fifo_s1_chipselect), //                    .chipselect
+		.readdata   (mm_interconnect_0_pio_fifo_s1_readdata),   //                    .readdata
+		.out_port   (pio_fifo_external_connection_export)       // external_connection.export
+	);
+
 	q_sys_spi_rxm spi_rxm (
 		.clk           (sys_clk_clk),                                           //              clk.clk
 		.reset_n       (~rst_controller_001_reset_out_reset),                   //            reset.reset_n
@@ -809,6 +827,7 @@ module q_sys (
 		.sys_clk_clk_clk                                                     (sys_clk_clk),                                                 //                                                   sys_clk_clk.clk
 		.cpu_reset_reset_bridge_in_reset_reset                               (rst_controller_001_reset_out_reset),                          //                               cpu_reset_reset_bridge_in_reset.reset
 		.ext_flash_reset_reset_bridge_in_reset_reset                         (rst_controller_003_reset_out_reset),                          //                         ext_flash_reset_reset_bridge_in_reset.reset
+		.fifo_0_reset_out_reset_bridge_in_reset_reset                        (reset_bridge_fifo_in_reset_reset),                            //                        fifo_0_reset_out_reset_bridge_in_reset.reset
 		.jtag_uart_reset_reset_bridge_in_reset_reset                         (rst_controller_002_reset_out_reset),                          //                         jtag_uart_reset_reset_bridge_in_reset.reset
 		.mem_if_ddr3_emif_0_avl_translator_reset_reset_bridge_in_reset_reset (rst_controller_007_reset_out_reset),                          // mem_if_ddr3_emif_0_avl_translator_reset_reset_bridge_in_reset.reset
 		.mem_if_ddr3_emif_0_soft_reset_reset_bridge_in_reset_reset           (rst_controller_007_reset_out_reset),                          //           mem_if_ddr3_emif_0_soft_reset_reset_bridge_in_reset.reset
@@ -974,6 +993,11 @@ module q_sys (
 		.msgdma_tx_prefetcher_csr_read                                       (mm_interconnect_0_msgdma_tx_prefetcher_csr_read),             //                                                              .read
 		.msgdma_tx_prefetcher_csr_readdata                                   (mm_interconnect_0_msgdma_tx_prefetcher_csr_readdata),         //                                                              .readdata
 		.msgdma_tx_prefetcher_csr_writedata                                  (mm_interconnect_0_msgdma_tx_prefetcher_csr_writedata),        //                                                              .writedata
+		.pio_fifo_s1_address                                                 (mm_interconnect_0_pio_fifo_s1_address),                       //                                                   pio_fifo_s1.address
+		.pio_fifo_s1_write                                                   (mm_interconnect_0_pio_fifo_s1_write),                         //                                                              .write
+		.pio_fifo_s1_readdata                                                (mm_interconnect_0_pio_fifo_s1_readdata),                      //                                                              .readdata
+		.pio_fifo_s1_writedata                                               (mm_interconnect_0_pio_fifo_s1_writedata),                     //                                                              .writedata
+		.pio_fifo_s1_chipselect                                              (mm_interconnect_0_pio_fifo_s1_chipselect),                    //                                                              .chipselect
 		.spi_rxm_spi_control_port_address                                    (mm_interconnect_0_spi_rxm_spi_control_port_address),          //                                      spi_rxm_spi_control_port.address
 		.spi_rxm_spi_control_port_write                                      (mm_interconnect_0_spi_rxm_spi_control_port_write),            //                                                              .write
 		.spi_rxm_spi_control_port_read                                       (mm_interconnect_0_spi_rxm_spi_control_port_read),             //                                                              .read
@@ -1361,7 +1385,7 @@ module q_sys (
 		.USE_RESET_REQUEST_IN15    (0),
 		.ADAPT_RESET_REQUEST       (0)
 	) rst_controller_004 (
-		.reset_in0      (~reset_reset_n),                     // reset_in0.reset
+		.reset_in0      (reset_bridge_fifo_in_reset_reset),   // reset_in0.reset
 		.clk            (clock_bridge_1_in_clk_clk),          //       clk.clk
 		.reset_out      (rst_controller_004_reset_out_reset), // reset_out.reset
 		.reset_req      (),                                   // (terminated)

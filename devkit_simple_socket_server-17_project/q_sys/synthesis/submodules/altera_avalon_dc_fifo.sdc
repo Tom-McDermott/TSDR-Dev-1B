@@ -38,6 +38,10 @@ if {![llength [query_collection -report -all $mem_regs]] > 0} {
     set mem_regs [get_registers -nowarn altera_avalon_dc_fifo:*|mem*];
 }
 
+
+# add dmuxclk clock constraint
+create_clock -name dmuxclk -period 16.267 -add
+
 set internal_out_payload_regs [get_registers -nowarn *|altera_avalon_dc_fifo:*|internal_out_payload*];
 if {![llength [query_collection -report -all $internal_out_payload_regs]] > 0} {
     set internal_out_payload_regs [get_registers -nowarn altera_avalon_dc_fifo:*|internal_out_payload*];

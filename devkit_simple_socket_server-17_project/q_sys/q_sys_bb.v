@@ -71,7 +71,9 @@ module q_sys (
 	spi_rxm_external_MOSI,
 	spi_rxm_external_SCLK,
 	spi_rxm_external_SS_n,
-	sys_clk_clk);	
+	sys_clk_clk,
+	pio_fifo_external_connection_export,
+	reset_bridge_fifo_in_reset_reset);	
 
 	output		altpll_shift_c0_clk;
 	output		altpll_shift_locked_conduit_export;
@@ -145,4 +147,6 @@ module q_sys (
 	output		spi_rxm_external_SCLK;
 	output		spi_rxm_external_SS_n;
 	input		sys_clk_clk;
+	output		pio_fifo_external_connection_export;
+	input		reset_bridge_fifo_in_reset_reset;
 endmodule

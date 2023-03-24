@@ -387,4 +387,5 @@ set_global_assignment -name QIP_FILE clkctrl/synthesis/clkctrl.qip
 set_global_assignment -name QIP_FILE q_sys/synthesis/q_sys.qip
 set_global_assignment -name VERILOG_FILE m10_rgmii.v
 set_global_assignment -name VERILOG_FILE subclock.v
+set_global_assignment -name SDC_FILE RxData32.sdc
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

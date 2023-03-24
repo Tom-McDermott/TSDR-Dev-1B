@@ -70,6 +70,8 @@
 		.spi_rxm_external_MOSI                       (<connected-to-spi_rxm_external_MOSI>),                       //                                    .MOSI
 		.spi_rxm_external_SCLK                       (<connected-to-spi_rxm_external_SCLK>),                       //                                    .SCLK
 		.spi_rxm_external_SS_n                       (<connected-to-spi_rxm_external_SS_n>),                       //                                    .SS_n
-		.sys_clk_clk                                 (<connected-to-sys_clk_clk>)                                  //                             sys_clk.clk
+		.sys_clk_clk                                 (<connected-to-sys_clk_clk>),                                 //                             sys_clk.clk
+		.pio_fifo_external_connection_export         (<connected-to-pio_fifo_external_connection_export>),         //        pio_fifo_external_connection.export
+		.reset_bridge_fifo_in_reset_reset            (<connected-to-reset_bridge_fifo_in_reset_reset>)             //          reset_bridge_fifo_in_reset.reset
 	);
 

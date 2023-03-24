@@ -259,7 +259,11 @@ q_sys               q_sys_inst (
 						  .clock_bridge_1_in_clk_clk                   						  (dmuxclk),                    //                 clock_bridge_1_in_clk.clk
 						  .fifo_0_in_valid                             						  (dmuxvalid),                  //                           fifo_0_in.valid
 						  .fifo_0_in_data                              						  (dmuxdata),                   //                                    .data
-						  .fifo_0_in_ready                             						  (fifoready)                   //                                    .ready
+						  .fifo_0_in_ready                             						  (fifoready),                  //                                    .ready
+
+						  // CPU PIO to rest RAM-FIFO
+						  .pio_fifo_external_connection_export         						  (RAMFIFO_reset),         	  //        pio_fifo_external_connection.export
+						  .reset_bridge_fifo_in_reset_reset            						  (RAMFIFO_reset)               //          reset_bridge_fifo_in_reset.reset
 
                     );
 
@@ -369,6 +373,8 @@ wire [31:0] dmuxdata;
 wire dmuxclk;
 wire dmuxvalid;
 wire fifoready;
+
+wire RAMFIFO_reset;
 //
 RXData rx0 (
 	.ch1		(dmuxdata),  // receiver channel 0 dmux output
