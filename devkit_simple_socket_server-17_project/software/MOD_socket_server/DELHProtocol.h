@@ -111,6 +111,7 @@ int AD9648(struct PARSEDCMD *, char resultmessage[], int itfcindex); 		// Handle
 #define MAXITFC 6				// The DEV_KIT + DataEngine Adaptor + Receiver test system has 6 (I2C+SPI) interfaces
 #define CLOCKSYNTHITFC	0		// Interface number of the clock module synthesizer (needed for initialization)
 #define GPSINTFC 1				// Interface number of the GPS ZEDF9T (needed for initialization)
+#define ADCINTFC 5				// Interface number of the ADC SPI interface (needed forinitialization)
 
 struct ITFCMAP {
 	unsigned int module;	// Module number

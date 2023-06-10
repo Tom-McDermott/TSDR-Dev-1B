@@ -13,5 +13,6 @@ int initPeriph();
 int SynthInit();
 int GPSInit();
 int GPSPostTest();
+int ADCInit();
 
 #endif /* INITIALIZEPERIPH_H_ */

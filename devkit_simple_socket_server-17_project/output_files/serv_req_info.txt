@@ -1,27 +1,74 @@
 <internal_error>
 <sub_system>ERR</sub_system>
 <callstack>
-	0x7facf7d43be6: ccl_err + 0x7be6 (_ZN15ERR_STACKWALKER15get_stack_traceEPPKviiPv + 0xd8)
-	0x7facf7d46e95: ccl_err + 0xae95 (_Z14err_terminatorv + 0x5a)
-	0x7fad10c9eae6: jtag_client + 0x82ae6 (_ZN10__cxxabiv111__terminateEPFvvE + 0x6)
-	0x7fad10c9eb31: jtag_client + 0x82b31
-	0x7fad10c9ec86: jtag_client + 0x82c86 (__cxa_rethrow + 0x46)
-	0x7fad0c38d034: QtCore.so.4 + 0x1b5034 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x2f4)
-	0x7fad0c391c84: QtCore.so.4 + 0x1b9c84 (_ZN16QCoreApplication4execEv + 0xb4)
+	0x7f9b0c571be6: ccl_err + 0x7be6 (_ZN15ERR_STACKWALKER15get_stack_traceEPPKviiPv + 0xd8)
+	0x7f9b0c574e95: ccl_err + 0xae95 (_Z14err_terminatorv + 0x5a)
+	0x7f9b254ccae6: jtag_client + 0x82ae6 (_ZN10__cxxabiv111__terminateEPFvvE + 0x6)
+	0x7f9b254ebf29: jtag_client + 0xa1f29
+	0x7f9b254cc715: jtag_client + 0x82715 (__gxx_personality_v0 + 0x2b5)
+	0x7f9b04d3de73: gcc_s.so.1 + 0xfe73 (_Unwind_RaiseException_Phase2 + 0x43)
+	0x7f9b04d3e397: gcc_s.so.1 + 0x10397 (_Unwind_Resume + 0x57)
+	0x7f9b0ce9244c: ccl_msg + 0x6544c (_GLOBAL__sub_I_msg_internal_error.cpp + 0)
+	0x7f9b0c574b0e: ccl_err + 0xab0e (_Z26err_report_fatal_exceptionPKcPv + 0x75)
+	0x7f9b0c574e0d: ccl_err + 0xae0d (err_sigaction_handler + 0x138)
+	0x7f9b0584b420: pthread.so.0 + 0x14420
+	0x7f9b254b889f: jtag_client + 0x6e89f (_ZN11AJI_OPEN_JS12close_deviceEv + 0x3c9)
+	0x7f9b254b9ab3: jtag_client + 0x6fab3 (_Z16aji_close_deviceP8AJI_OPEN + 0x5f)
+	0x7f9b25590365: sld_hapi + 0x2365 (_ZN12HAPI_SMO_HUBD2Ev + 0x21)
+	0x7f9b25590410: sld_hapi + 0x2410 (_ZN15HAPI_SMO_DEVICED2Ev + 0x70)
+	0x7f9b25590457: sld_hapi + 0x2457 (_ZN17HAPI_SMO_HARDWARED2Ev + 0x23)
+	0x7f9b25590499: sld_hapi + 0x2499 (_ZN16HAPI_SMO_MANAGERD2Ev + 0x19)
+	0x7f9b04b82fde: c.so.6 + 0x46fde (__cxa_finalize + 0xce)
+	0x7f9b2558fa13: sld_hapi + 0x1a13
+	0x7f9b260d1f6b: ld-linux-x86-64.so.2 + 0x11f6b
+	0x7f9b04b828a7: c.so.6 + 0x468a7
+	0x7f9b04b82a60: c.so.6 + 0x46a60 (on_exit + 0)
+	0x7f9b0cf3ccde: ccl_ipc + 0x3cde (ipc_signal_handler + 0xe7)
+	0x7f9b04b7f090: c.so.6 + 0x43090
+	0x7f9b04c4e99f: c.so.6 + 0x11299f (__poll + 0x4f)
+	0x7f9b0288fc1a: xcb.so.1 + 0xbc1a
+	0x7f9b0289161f: xcb.so.1 + 0xd61f
+	0x7f9b02891796: xcb.so.1 + 0xd796 (xcb_wait_for_reply64 + 0x46)
+	0x7f9b0358eee8: X11.so.6 + 0x3eee8 (_XReply + 0x108)
+	0x7f9b03584ddf: X11.so.6 + 0x34ddf (XQueryPointer + 0x8f)
+	0x7f9b09717e8d: QtGui.so.4 + 0x299e8d (_ZN7QCursor3posEv + 0x9d)
+	0x7f9b249b6a63: gcl_afcq + 0xb8a63 (_ZN32AFCQ_DOCK_WIDGET_TITLEBAR_WIDGET26update_button_active_stateEv + 0x1d)
+	0x7f9b249b4480: gcl_afcq + 0xb6480 (_ZN16AFCQ_DOCK_WIDGET9showEventEP10QShowEvent + 0x32)
+	0x7f9b096e4558: QtGui.so.4 + 0x266558 (_ZN7QWidget5eventEP6QEvent + 0xa98)
+	0x7f9b09ae5e1c: QtGui.so.4 + 0x667e1c (_ZN11QDockWidget5eventEP6QEvent + 0xbc)
+	0x7f9b249b4b33: gcl_afcq + 0xb6b33 (_ZN16AFCQ_DOCK_WIDGET5eventEP6QEvent + 0x33)
+	0x7f9b0968284f: QtGui.so.4 + 0x20484f (_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent + 0xaf)
+	0x7f9b09688ea3: QtGui.so.4 + 0x20aea3 (_ZN12QApplication6notifyEP7QObjectP6QEvent + 0x183)
+	0x7f9b20bbba84: QtCore.so.4 + 0x1b5a84 (_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent + 0x84)
+	0x7f9b096e2812: QtGui.so.4 + 0x264812 (_ZN14QWidgetPrivate12showChildrenEb + 0x92)
+	0x7f9b096e27eb: QtGui.so.4 + 0x2647eb (_ZN14QWidgetPrivate12showChildrenEb + 0x6b)
+	0x7f9b096e27eb: QtGui.so.4 + 0x2647eb (_ZN14QWidgetPrivate12showChildrenEb + 0x6b)
+	0x7f9b096e27eb: QtGui.so.4 + 0x2647eb (_ZN14QWidgetPrivate12showChildrenEb + 0x6b)
+	0x7f9b096e27eb: QtGui.so.4 + 0x2647eb (_ZN14QWidgetPrivate12showChildrenEb + 0x6b)
+	0x7f9b0970c185: QtGui.so.4 + 0x28e185 (_ZN12QApplication15x11ProcessEventEP7_XEvent + 0x1985)
+	0x7f9b09736d62: QtGui.so.4 + 0x2b8d62
+	0x7f9b040ee17d: glib-2.0.so.0 + 0x5217d (g_main_context_dispatch + 0x27d)
+	0x7f9b040ee400: glib-2.0.so.0 + 0x52400
+	0x7f9b040ee4a3: glib-2.0.so.0 + 0x524a3 (g_main_context_iteration + 0x33)
+	0x7f9b20beeab5: QtCore.so.4 + 0x1e8ab5 (_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x65)
+	0x7f9b0973689f: QtGui.so.4 + 0x2b889f
+	0x7f9b20bbaa95: QtCore.so.4 + 0x1b4a95 (_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE + 0x35)
+	0x7f9b20bbae68: QtCore.so.4 + 0x1b4e68 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x128)
+	0x7f9b20bbfc84: QtCore.so.4 + 0x1b9c84 (_ZN16QCoreApplication4execEv + 0xb4)
 	   0x401eab: quartus + 0x1eab (_Z8qgq_mainiPPKc + 0x7b)
-	0x7facf863de30: ccl_msg + 0x3ee30 (_Z15msg_main_threadPv + 0x10)
-	0x7facf7d04acc: ccl_thr + 0x5acc (thr_final_wrapper + 0xc)
-	0x7facf863deef: ccl_msg + 0x3eeef (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)
-	0x7facf7d75f9c: ccl_mem + 0x9f9c (_Z18mem_thread_wrapperPFPvS_ES_ + 0x5c)
-	0x7facf7d44b39: ccl_err + 0x8b39 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)
-	0x7facf7d04b0f: ccl_thr + 0x5b0f (thr_thread_wrapper + 0x15)
-	0x7facf863fea1: ccl_msg + 0x40ea1 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xb2)
+	0x7f9b0ce6be30: ccl_msg + 0x3ee30 (_Z15msg_main_threadPv + 0x10)
+	0x7f9b0c532acc: ccl_thr + 0x5acc (thr_final_wrapper + 0xc)
+	0x7f9b0ce6beef: ccl_msg + 0x3eeef (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)
+	0x7f9b0c5a3f9c: ccl_mem + 0x9f9c (_Z18mem_thread_wrapperPFPvS_ES_ + 0x5c)
+	0x7f9b0c572b39: ccl_err + 0x8b39 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)
+	0x7f9b0c532b0f: ccl_thr + 0x5b0f (thr_thread_wrapper + 0x15)
+	0x7f9b0ce6dea1: ccl_msg + 0x40ea1 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xb2)
 	   0x401f91: quartus + 0x1f91 (main + 0x26)
-	0x7facf0333083: c.so.6 + 0x24083 (__libc_start_main + 0xf3)
+	0x7f9b04b60083: c.so.6 + 0x24083 (__libc_start_main + 0xf3)
 	   0x401d39: quartus + 0x1d39
 </callstack>
 <error>*** Fatal Error: Unhandled Exception</error>
-<date>Fri Oct 28 10:49:58 2022
+<date>Fri Jun  9 14:19:47 2023
 </date>
 <version>Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition</version>
 </internal_error>

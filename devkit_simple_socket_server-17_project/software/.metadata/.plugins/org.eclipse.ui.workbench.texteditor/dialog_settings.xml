@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="usleep" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="*FIFO*"/>
+			<item value="FIFO*"/>
+			<item value="fifo_0*"/>
 			<item value="usleep"/>
 			<item value="sleep"/>
 			<item value="nack"/>
 			<item value="NACK"/>
 			<item value="-5"/>
-			<item value="i2c_rxM"/>
-			<item value="I2C_RXM"/>
-			<item value="I2C_RXM_CTRL_BASE"/>
 		</list>
 		<list key="replacehistory">
 		</list>

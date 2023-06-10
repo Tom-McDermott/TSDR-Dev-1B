@@ -40,7 +40,12 @@ obj/default/InitializePeriph.o: InitializePeriph.c InitializePeriph.h \
  ../MOD_socket_server_bsp//UCOSII/inc/os/alt_sem.h \
  ../MOD_socket_server_bsp//UCOSII/inc/priv/alt_sem_ucosii.h \
  ../MOD_socket_server_bsp//UCOSII/inc/os/alt_flag.h \
- ../MOD_socket_server_bsp//UCOSII/inc/priv/alt_flag_ucosii.h
+ ../MOD_socket_server_bsp//UCOSII/inc/priv/alt_flag_ucosii.h \
+ ../MOD_socket_server_bsp//drivers/inc/altera_avalon_spi.h \
+ ../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo.h \
+ ../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo_regs.h \
+ ../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo_util.h \
+ ../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo_regs.h
 
 InitializePeriph.h:
 
@@ -133,3 +138,13 @@ alt_error_handler.h:
 ../MOD_socket_server_bsp//UCOSII/inc/os/alt_flag.h:
 
 ../MOD_socket_server_bsp//UCOSII/inc/priv/alt_flag_ucosii.h:
+
+../MOD_socket_server_bsp//drivers/inc/altera_avalon_spi.h:
+
+../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo.h:
+
+../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo_regs.h:
+
+../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo_util.h:
+
+../MOD_socket_server_bsp//drivers/inc/altera_avalon_fifo_regs.h:
